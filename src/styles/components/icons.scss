@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Icons / Components
+   ========================================================================== */
+
+[class^='icon'] {
+    fill: currentColor; // inherit color of its context
+    display: inline-block;
+    flex: 0 0 auto; // prevent icon shrink/grow if in a flex parent
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+.icon--xs {
+    height: 0.75em;
+    width: 0.75em;
+}
+
+.icon--smaller {
+    height: 2.5em;
+}
+
+.icon--sm {
+    height: 3.125em;
+}
+
+.icon--md {
+    width: 1.875rem;
+}
+
+.icon--lg {
+    height: 3em;
+    width: 3em;
+}
+
+.icon--xl {
+    height: 3.5em;
+    width: 100%;
+}

@@ -16,6 +16,7 @@
     }
 
     .header__brand {
+        z-index: 3;
         a {
             display: block;
         }
@@ -29,7 +30,7 @@
         --bar-width: 35px;
         --bar-width-short: 27px;
         --bar-height: 2px;
-        --bar-spacer: 8px;
+        --bar-spacer: 10px;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -45,28 +46,76 @@
             height: var(--bar-height);
             left: calc(50% - var(--bar-width) / 2);
             top: calc(50% - var(--bar-height) / 2);
+            transition: all 0.3s ease-in-out;
             width: var(--bar-width);
 
             &:nth-child(1) {
                 margin-bottom: var(--bar-spacer);
+                transform-origin: 100% 0%;
             }
 
             &:nth-child(2) {
-                width: var(--bar-width-short);
                 margin-left: auto;
+                transform-origin: right;
+                width: var(--bar-width-short);
             }
 
             &:nth-child(3) {
                 margin-top: var(--bar-spacer);
+                transform-origin: 100% 100%;
             }
         }
     }
 
     @supports (-webkit-text-stroke: 1px white) {
         .nav__item {
+            letter-spacing: 0.1em;
             -webkit-text-stroke: 1px white;
             -webkit-text-fill-color: black;
-            letter-spacing: 0.1em;
+        }
+    }
+
+    .nav--primary {
+        background-color: var(--color-bg-primary);
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(100vw);
+        transition: all 0.3s ease-out;
+        width: 100vw;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+        margin-top: 0;
+        padding: 200px 0;
+    }
+    li {
+        font-size: var(--font-size-h3);
+        text-align: center;
+    }
+
+    .nav-is-active & {
+        .nav--primary {
+            transform: translateX(0);
+        }
+
+        span {
+            &:nth-child(1) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-child(2) {
+                transform: scaleX(0);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(45deg);
+            }
         }
     }
 }
