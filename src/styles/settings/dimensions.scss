@@ -8,3 +8,11 @@ $breakpoint-sm: 768px;
 $breakpoint-md: 1024px;
 $breakpoint-lg: 1440px;
 $breakpoint-xl: 1920px;
+
+:root {
+    --spacing-xs: 5px;
+    --spacing-sm: 20px;
+    --spacing-md: 40px;
+    --spacing-lg: 50px;
+    --spacing-xl: 100px;
+}

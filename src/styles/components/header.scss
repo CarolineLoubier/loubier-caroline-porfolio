@@ -1,0 +1,72 @@
+/* ==========================================================================
+ Header / Components
+ ========================================================================== */
+
+.header {
+    background-color: var(--color-bg-primary);
+    height: 60px;
+    padding: var(--spacing-sm);
+    position: fixed;
+    width: 100%;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header__brand {
+        a {
+            display: block;
+        }
+
+        img {
+            max-height: 30px;
+        }
+    }
+
+    .header__toggle {
+        --bar-width: 35px;
+        --bar-width-short: 27px;
+        --bar-height: 2px;
+        --bar-spacer: 8px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        height: var(--bar-width);
+        outline: none;
+        padding: 0;
+        position: relative;
+        width: var(--bar-width);
+
+        span {
+            background: var(--color-secondary);
+            display: block;
+            height: var(--bar-height);
+            left: calc(50% - var(--bar-width) / 2);
+            top: calc(50% - var(--bar-height) / 2);
+            width: var(--bar-width);
+
+            &:nth-child(1) {
+                margin-bottom: var(--bar-spacer);
+            }
+
+            &:nth-child(2) {
+                width: var(--bar-width-short);
+                margin-left: auto;
+            }
+
+            &:nth-child(3) {
+                margin-top: var(--bar-spacer);
+            }
+        }
+    }
+
+    @supports (-webkit-text-stroke: 1px white) {
+        .nav__item {
+            -webkit-text-stroke: 1px white;
+            -webkit-text-fill-color: black;
+            letter-spacing: 0.1em;
+        }
+    }
+}

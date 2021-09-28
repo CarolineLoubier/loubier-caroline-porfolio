@@ -1,3 +1,10 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
+@font-face {
+    font-family: 'Ministry of Moron';
+    src: url(../assets/fonts/MinistryOfMoron-Dvpx.ttf);
+}
+
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
 
@@ -22,6 +29,7 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
+@import 'components/header.scss';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
