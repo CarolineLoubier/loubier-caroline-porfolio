@@ -8,11 +8,14 @@
 
     --font-size-content: 1rem;
 
-    /// Grosseur des textes
-    --font-size-h1: 3.75rem;
-    --font-size-h2: 2rem;
-    --font-size-h3: 1.8rem;
-    --font-size-h4: 1.6rem;
-    --font-size-h5: 1.4rem;
-    --font-size-h6: 1.2rem;
+    /// Grosseur des textes sur mobile
+    --font-size-h1: 3rem; //48px
+    --font-size-h1-smaller: 2.25rem; //36px
+    --font-size-h2: 1.875rem; //30px
+    --font-size-h2-smaller: 1.125rem; //18px
+    --font-size-h3: 1.5rem; //24px
+
+    --font-size-xsmall: 0.875rem; //14px
+    --font-size-small: 1rem; //16px
+    --font-size-content: 1.125rem; //18px
 }
