@@ -67,11 +67,11 @@
         }
     }
 
-    @supports (-webkit-text-stroke: 1px white) {
+    @supports (-webkit-text-stroke: 1px var(--color-secondary)) {
         .nav__item {
             letter-spacing: 0.1em;
-            -webkit-text-stroke: 1px white;
-            -webkit-text-fill-color: black;
+            -webkit-text-stroke: 0.5px var(--color-secondary);
+            -webkit-text-fill-color: var(--color-bg-primary);
         }
     }
 
