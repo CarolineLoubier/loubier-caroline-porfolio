@@ -1,4 +1,4 @@
-/*export default class Icons {
+export default class Icons {
   static load(path) {
     path = path || 'assets/icons.svg';
 
@@ -13,4 +13,4 @@
         document.body.appendChild(svg);
       });
   }
-}*/
+}
