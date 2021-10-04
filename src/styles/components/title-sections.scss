@@ -1,0 +1,20 @@
+/* ==========================================================================
+ Title Sections / Components
+ ========================================================================== */
+
+ h1.title--section {
+    letter-spacing: 0.1em;
+    line-height: 80%;
+    font-size: var(--font-size-h1);
+    text-align: center;
+    line-height: 100%;
+
+    span {
+        font-size: var(--font-size-h1-smaller);
+        -webkit-text-stroke: 1px var(--color-primary);
+        -webkit-text-fill-color: var(--color-bg-primary);
+        transform: translateX(-50%);
+        position: absolute;
+        transform: translateX(-100px);
+    }
+ }

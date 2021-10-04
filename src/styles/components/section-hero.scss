@@ -18,6 +18,7 @@
 
     .hero__title {
         letter-spacing: 0.1em;
+        line-height: 80%;
 
         span {
             font-size: var(--font-size-h1-smaller);
@@ -70,6 +71,12 @@
             span {
                 font-size: var(--font-size-large-tab);
             }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        .hero__content {
+            padding-top: 180px;
         }
     }
 
