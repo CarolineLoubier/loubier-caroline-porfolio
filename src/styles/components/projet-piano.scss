@@ -91,7 +91,9 @@
     }
 }
 
-.projet__contexte {
+// Section contexte
+
+.projet__contexte, .projet__processus, .projet__defis{
 
     padding-top: 60px;
     
@@ -146,7 +148,7 @@ h3 {
     text-align: center;
 }
 
-.contexte__description {
+.contexte__description, .processus__description, .defis__description {
     margin: 60px 0;
 }
 
@@ -158,7 +160,7 @@ h3 {
     align-items: center;
 
 
-    .contexte__container {
+    .contexte__container, .processus__container, .defis__container {
         display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -172,8 +174,13 @@ h3 {
     }
     
 
-        .contexte__title {
+        .contexte__title, .defis__title {
         grid-column: 1/2;
+        grid-row: 1/2;
+        }
+
+        .processus__title {
+            grid-column: 2/-1;
         grid-row: 1/2;
         }
 
@@ -183,7 +190,20 @@ h3 {
         margin-top: 20px;
         }
 
-        .photo__container {
+        .defis__description {
+            grid-column: 1/2;
+        grid-row: 2/-1;
+        margin-top: 20px;
+        }
+
+
+        .processus__description {
+            grid-column: 2/-1;
+        grid-row: 2/-1;
+        margin-top: 20px;
+        }
+
+        .photo__container--right {
         grid-column: 2/3;
         grid-row: 1/-1;
         display: flex;
@@ -191,6 +211,15 @@ h3 {
         justify-content: center;
         margin-left: var(--spacing-lg);
         }
+
+        .photo__container--left {
+            grid-column: 1/2;
+            grid-row: 1/-1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: var(--spacing-lg);
+            }
 
         .contexte__details {
         display: flex;
@@ -201,35 +230,10 @@ h3 {
 
     }
     
-    
-    /*height: 100vh;
-    display: flex;
-    align-items: center;
-
-        .photo__container {
-            float: right;
-            max-width: 50%;
-            margin-left: var(--spacing-lg);
-
-            .photo__projet {
-                max-width: 900px;
-            }
-        }
-
-        h2 {
-            display: inline-block;
-        }
-
-        .contexte__description {
-            margin: 0;
-        }
-
-        .contexte__details {
-            display: flex;
-            justify-content: space-between;
-        }*/
-    
-    
 
 }
 }
+
+// Section processus
+
+
