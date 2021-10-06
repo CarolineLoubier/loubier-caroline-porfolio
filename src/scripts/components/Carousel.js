@@ -77,6 +77,31 @@ export default class Carousel {
       };
     }
 
+    if (this.element.dataset.carousel == 'petit') {
+      options = {
+        ...this.defaultOptions,
+        ...{
+          slidesPerView: 2.5,
+
+          navigation: false,
+          pagination: false,
+          centeredSlides: true,
+          loop: false,
+          spaceBetween: 150,
+          breakpoints: {
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 6,
+              allowTouchMove: false,
+              centeredSlides: false,
+            },
+          },
+        },
+      };
+    }
+
     // Instanciation d'un nouveau Swiper avec les options
     new Swiper(this.element, options);
   }

@@ -3,6 +3,7 @@
  ========================================================================== */
 .a-propos {
     padding-top: 60px;
+    padding-bottom: 120px;
 
     @media screen and (min-width: $breakpoint-md) {
         padding-top: 120px;
@@ -69,6 +70,8 @@
         }
     }
 
+    // Mes qualités
+
     .qualite {
         display: flex;
         flex-direction: column;
@@ -128,6 +131,143 @@
 
         .qualite:nth-of-type(3) {
             transform: translateX(20%);
+        }
+    }
+
+    // Mes compétences
+
+    .a-propos__competences {
+        .swiper-slide-active .competence--container {
+            border: 2px solid rgba(0, 179, 255, 1);
+
+            img {
+                max-width: 60%;
+                filter: brightness(0) saturate(100%) invert(100%) sepia(1%)
+                    saturate(6109%) hue-rotate(291deg) brightness(88%)
+                    contrast(108%);
+            }
+
+            p {
+                -webkit-text-stroke: 0px var(--color-primary);
+                -webkit-text-fill-color: var(--color-secondary);
+            }
+        }
+
+        .competence--container {
+            border: 2px solid rgba(0, 179, 255, 0.5);
+            transform: rotate(-45deg);
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            transform-origin: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease-in;
+
+            img {
+                transform: rotate(45deg);
+                max-width: 40%;
+                transition: 0.3s ease-in;
+                transform-origin: 50%;
+            }
+
+            p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(160%);
+                font-family: var(--font-primary);
+                font-size: 16px;
+                -webkit-text-stroke: 0.5px var(--color-secondary);
+                -webkit-text-fill-color: var(--color-bg-primary);
+                -webkit-font-smoothing: antialiased;
+                letter-spacing: 0.105em;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            .swiper-slide-active .competence--container {
+                border: 2px solid rgba(0, 179, 255, 0.5);
+
+                img {
+                    max-width: 40%;
+                    filter: none;
+                }
+
+                p {
+                    -webkit-text-stroke: 0.5px var(--color-secondary);
+                    -webkit-text-fill-color: var(--color-bg-primary);
+                }
+            }
+
+            .swiper-slide:hover .competence--container {
+                border: 2px solid rgba(0, 179, 255, 1);
+
+                img {
+                    max-width: 60%;
+                    filter: brightness(0) saturate(100%) invert(100%) sepia(1%)
+                        saturate(6109%) hue-rotate(291deg) brightness(88%)
+                        contrast(108%);
+                }
+
+                p {
+                    -webkit-text-stroke: 0px var(--color-primary);
+                    -webkit-text-fill-color: var(--color-secondary);
+                }
+            }
+
+            .competence--container {
+                width: 180px;
+                height: 180px;
+
+                p {
+                    transform: translateX(-50%) translateY(200%);
+                    font-size: var(--font-size-content-desk);
+                }
+            }
+
+            .swiper-wrapper {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                margin: 0 40px;
+
+                gap: 50px 0px;
+
+                .swiper-slide:nth-child(1) {
+                    grid-column: 1/2;
+                }
+
+                .swiper-slide:nth-child(2) {
+                    grid-column: 3/4;
+                }
+
+                .swiper-slide:nth-child(3) {
+                    grid-column: 5/6;
+                }
+
+                .swiper-slide:nth-child(4) {
+                    grid-column: 2/3;
+                    grid-row: 2;
+                }
+
+                .swiper-slide:nth-child(5) {
+                    grid-column: 4/5;
+                    grid-row: 2;
+                }
+
+                .swiper-slide:nth-child(6) {
+                    grid-column: 6/7;
+                    grid-row: 2;
+                }
+            }
+
+            .swiper-container-initialized {
+                margin-top: 150px;
+            }
         }
     }
 }
