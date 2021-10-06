@@ -4,7 +4,11 @@
 
 .projets {
     height: 100vh;
-    padding-top: 120px;
+    padding-top: 60px;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding-top: 120px;
+    }
 
     .swiper-slide {
         transform: skewY(3deg);

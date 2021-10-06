@@ -11,6 +11,7 @@
     top: 0;
 
     width: 100%;
+    z-index: 3;
 
     .wrapper {
         align-items: center;
@@ -75,7 +76,7 @@
         }
     }
 
-   /* @supports (-webkit-text-stroke: 1px var(--color-secondary)) {
+    /* @supports (-webkit-text-stroke: 1px var(--color-secondary)) {
         .nav__item {
             letter-spacing: 0.1em;
             -webkit-text-stroke: 1px var(--color-secondary);
@@ -144,13 +145,11 @@
         }
 
         .nav--primary {
-            
             transform: translateX(0);
             height: 100%;
             width: 600px;
             position: relative;
             background-color: rgba($color: #000000, $alpha: 0);
-            
 
             ul {
                 flex-direction: row;
@@ -158,10 +157,7 @@
                 justify-content: space-between;
                 padding: 0;
                 height: 100%;
-
-                
             }
-
 
             .nav__item {
                 font-size: 16px;
@@ -171,12 +167,11 @@
                 -webkit-text-fill-color: var(--color-secondary-tertiary);
                 padding: 0 15px;
                 position: relative;
-                transition: color .5s ease-in;
+                transition: color 0.5s ease-in;
                 white-space: nowrap;
 
-
                 &::after {
-                    content: "";
+                    content: '';
                     border: 2px solid rgba($color: #00b3ff, $alpha: 0);
                     height: 30px;
                     width: 30px;
@@ -184,7 +179,7 @@
                     position: absolute;
                     left: 0;
                     z-index: -1;
-                    transition: all .3s ease-in;
+                    transition: all 0.3s ease-in;
                 }
 
                 &:hover::after {
@@ -194,11 +189,9 @@
 
                 &:hover {
                     color: var(--color-secondary);
-                -webkit-text-fill-color: var(--color-secondary);
+                    -webkit-text-fill-color: var(--color-secondary);
                 }
-                
             }
-
         }
 
         .header__brand {
