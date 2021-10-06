@@ -90,3 +90,146 @@
         }
     }
 }
+
+.projet__contexte {
+
+    padding-top: 60px;
+    
+    .contexte__details, .contexte__details h3{
+        font-family: var(--font-secondary);
+        font-size: var(--font-size-h3-smaller);
+    }
+
+h3 {
+        color: var(--color-secondary);
+        margin: 60px 0 35px 0;
+    }
+    
+.logiciel {
+        max-width: 26px;
+    }
+
+.logiciel__container {
+    border: 2px solid rgba(0, 179, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    img {
+        transform: rotate(-45deg);
+    }
+}
+
+.credits__container {
+    
+    a {
+        color: var(--color-tertiary);
+        transition: .3s ease-in;
+    }
+
+    a:hover {
+        color: var(--color-secondary);
+    }
+    
+}
+
+.logiciel__container, .credits__container {
+    margin-bottom: 60px;
+}
+
+.legende {
+    font-size: var(--font-size-xsmall);
+    text-align: center;
+}
+
+.contexte__description {
+    margin: 60px 0;
+}
+
+@media screen and (min-width:$breakpoint-md){
+
+    height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+
+
+    .contexte__container {
+        display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
+    h3 {
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+    
+
+        .contexte__title {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        }
+
+        .contexte__description {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 20px;
+        }
+
+        .photo__container {
+        grid-column: 2/3;
+        grid-row: 1/-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: var(--spacing-lg);
+        }
+
+        .contexte__details {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1/2;
+        grid-row: 3/-1;
+        }
+
+    }
+    
+    
+    /*height: 100vh;
+    display: flex;
+    align-items: center;
+
+        .photo__container {
+            float: right;
+            max-width: 50%;
+            margin-left: var(--spacing-lg);
+
+            .photo__projet {
+                max-width: 900px;
+            }
+        }
+
+        h2 {
+            display: inline-block;
+        }
+
+        .contexte__description {
+            margin: 0;
+        }
+
+        .contexte__details {
+            display: flex;
+            justify-content: space-between;
+        }*/
+    
+    
+
+}
+}
