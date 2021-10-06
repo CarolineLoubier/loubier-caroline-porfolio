@@ -1,0 +1,92 @@
+/* ==========================================================================
+ Projet Piano 3D / Components
+ ========================================================================== */
+.hero--piano {
+    background-image: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 36.22%,
+            rgba(0, 0, 0, 0.775) 59.66%,
+            #000000 100%
+        ),
+        url(../../assets/images/hero-piano.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding-bottom: 60px;
+
+        .info__projet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-left: auto;
+
+            h3 {
+                border-top: none;
+                border-left: 1px solid rgba(250, 248, 248, 0.3);
+                padding-left: 35px;
+                margin-left: 35px;
+            }
+
+            h2 {
+                font-size: var(--font-size-h2-smaller-desk);
+            }
+        }
+
+        .info__left {
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            width: fit-content;
+            justify-self: flex-end;
+        }
+    }
+
+    h1,
+    h2 {
+        text-align: left;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: var(--font-size-h1-smaller);
+        margin: 0 0 10px 0;
+    }
+
+    h3 {
+        font-family: var(--font-secondary);
+        letter-spacing: normal;
+        padding: var(--spacing-sm) 0;
+        border-top: 1px solid rgba(250, 248, 248, 0.3);
+        width: fit-content;
+        margin: 0;
+    }
+
+    button {
+        margin-bottom: 35px;
+        letter-spacing: 0.1em;
+
+        a {
+            color: var(--color-secondary);
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        button,
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+}

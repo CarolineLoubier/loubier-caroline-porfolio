@@ -59,3 +59,8 @@ h2.title--section {
         }
     }
 }
+
+.stroke {
+    -webkit-text-stroke: 1px var(--color-primary);
+    -webkit-text-fill-color: rgba($color: #000000, $alpha: 0);
+}
