@@ -28,7 +28,9 @@ export default class Carousel {
           slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 5,
+          allowTouchMove: false,
+          centeredSlides: false,
         },
       },
     };

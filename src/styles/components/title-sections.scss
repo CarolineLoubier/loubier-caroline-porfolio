@@ -8,14 +8,25 @@ h1.title--section {
     font-size: var(--font-size-h1);
     text-align: center;
     line-height: 100%;
+    margin: 20px 0 50px 0px;
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-h1-desk);
+        text-align: left;
+        margin: 20px 0 70px 0px;
+    }
 
     span {
         font-size: var(--font-size-h1-smaller);
         -webkit-text-stroke: 1px var(--color-primary);
         -webkit-text-fill-color: var(--color-bg-primary);
         -webkit-font-smoothing: antialiased;
-        transform: translateX(-50%);
         position: absolute;
         transform: translateX(-100px);
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h1-smaller-desk);
+            transform: translateX(100px);
+        }
     }
 }

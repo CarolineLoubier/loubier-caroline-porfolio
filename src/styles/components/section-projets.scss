@@ -1,10 +1,10 @@
 /* ==========================================================================
- Title Sections / Components
+ Section Projets / Components
  ========================================================================== */
 
 .projets {
     height: 100vh;
-    padding-top: 60px;
+    padding-top: 120px;
 
     .swiper-slide {
         transform: skewY(3deg);
@@ -13,6 +13,7 @@
         overflow: hidden;
         position: relative;
         transition: all 0.3s ease-in;
+        cursor: pointer;
 
         h2,
         h3 {
@@ -27,6 +28,7 @@
             background-position: 50%;
             transform: skewY(-3deg) translateY(-30px);
             filter: saturate(0);
+            transition: all 0.3s ease-in;
         }
 
         .titre__projet {
@@ -58,6 +60,7 @@
                 rgba(0, 0, 0, 0.9) 70%,
                 #000000 100%
             );
+            transition: all 0.3s ease-in;
         }
 
         .see-more {
@@ -70,11 +73,12 @@
             z-index: 1;
             transform: translateX(-100%) translateY(-50%);
             opacity: 0;
+            transition: all 0.3s ease-in;
         }
     }
 
     .swiper-slide-active .unskew {
-        animation: colorer 0.3s forwards;
+        filter: saturate(1);
     }
 
     .swiper-slide-active h2,
@@ -83,40 +87,12 @@
     }
 
     .swiper-slide-active .projet__container {
-        animation: opacite 0.3s forwards;
+        opacity: 1;
     }
 
     .swiper-slide-active .see-more {
-        animation: plus 0.3s forwards;
-    }
-
-    @keyframes colorer {
-        from {
-            filter: saturate(0);
-        }
-        to {
-            filter: saturate(1);
-        }
-    }
-
-    @keyframes opacite {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes plus {
-        from {
-            opacity: 0;
-            transform: translateX(-100%) translateY(-50%);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(-50%) translateY(-50%);
-        }
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
     }
 
     .swiper-slide:nth-of-type(1) {
@@ -146,6 +122,72 @@
     .swiper-slide:nth-of-type(5) {
         .unskew {
             background-image: url(../../assets/images/project5.png);
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        .swiper-slide-active {
+            .unskew {
+                filter: saturate(0);
+            }
+            .see-more {
+                opacity: 0;
+                transform: translateX(-100%) translateY(-50%);
+            }
+
+            .projet__container {
+                opacity: 0;
+            }
+
+            h2,
+            h3 {
+                transform: translateX(-100%);
+            }
+        }
+
+        .swiper-slide:hover {
+            .unskew {
+                filter: saturate(1);
+            }
+            .see-more {
+                opacity: 1;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            .projet__container {
+                opacity: 1;
+            }
+
+            h2,
+            h3 {
+                transform: translateX(0%);
+            }
+        }
+
+        .grow {
+            display: flex;
+            justify-content: center;
+            overflow-x: visible;
+
+            height: 100%;
+        }
+
+        .grow .swiper-slide {
+            flex-basis: 20%;
+            flex-shrink: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        .grow .swiper-slide:hover {
+            flex-basis: 40%;
+        }
+
+        .grow .swiper-slide:first-child:hover {
+            flex-basis: 40%;
+        }
+
+        .grow .swiper-slide:last-child:hover {
+            flex-basis: 40%;
         }
     }
 }
