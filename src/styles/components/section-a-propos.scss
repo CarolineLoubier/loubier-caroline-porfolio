@@ -72,11 +72,14 @@
 
     // Mes qualités
 
+    .a-propos__qualites {
+        height: 100vh;
+    }
     .qualite {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-bottom: 35px;
+        margin-bottom: var(--spacing-md);
 
         @media screen and (min-width: $breakpoint-md) {
             flex-direction: row;
@@ -90,6 +93,7 @@
             -webkit-text-fill-color: var(--color-bg-primary);
             -webkit-font-smoothing: antialiased;
             position: relative;
+            line-height: 100%;
 
             @media screen and (min-width: $breakpoint-md) {
                 font-size: 144px;
@@ -106,7 +110,6 @@
                 @media screen and (min-width: $breakpoint-md) {
                     font-size: var(--font-size-h2-smaller-desk);
                     margin: 0;
-                    bottom: 15%;
                 }
             }
         }
