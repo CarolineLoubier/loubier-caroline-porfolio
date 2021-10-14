@@ -17,7 +17,7 @@ export default class Form {
    * Méthode d'initialisation
    */
   init() {
-    // Empêche la validation apr défaut du navigateur.
+    // Empêche la validation par défaut du navigateur.
     this.element.setAttribute('novalidate', '');
 
     // Boucle sur tous les éléments du formulaire, s'il sont requis, la méthode validateInput est appelée.
@@ -75,13 +75,15 @@ export default class Form {
 
   // Ajoute la classe error pour changer les styles lors d'une erreur
   addError(input) {
-    const container = input.closest('[data-input-container]') || input.closest('.input');
+    const container =
+      input.closest('[data-input-container]') || input.closest('.input');
     container.classList.add('error');
   }
 
   // Enlève la classe d'erreur pour changer les styles lorsque le champs est valide
   removeError(input) {
-    const container = input.closest('[data-input-container]') || input.closest('.input');
+    const container =
+      input.closest('[data-input-container]') || input.closest('.input');
     container.classList.remove('error');
   }
 
