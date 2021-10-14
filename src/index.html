@@ -371,10 +371,11 @@
                         </div>
                         <div class="contact__form">
                             <form
-                                action=""
+                                action="contact-form.php"
                                 class="form"
                                 autocomplete="off"
                                 data-component="Form"
+                                method="post"
                             >
                                 <fieldset class="form__grid">
                                     <div class="input">
@@ -410,20 +411,26 @@
                                     <div class="input textarea">
                                         <label
                                             class="input__label"
-                                            for="comment"
+                                            for="message"
                                             >Message</label
                                         >
                                         <textarea
                                             class="input__element"
-                                            name="comment"
-                                            id="comment"
+                                            name="message"
+                                            id="message"
                                             placeholder="Écrivez votre message ici..."
                                             required
                                         ></textarea>
                                     </div>
                                 </fieldset>
                                 <div class="form__footer">
-                                    <button class="btn">Envoyer</button>
+                                    <button
+                                        class="btn"
+                                        type="submit"
+                                        name="submit"
+                                    >
+                                        Envoyer
+                                    </button>
                                 </div>
                             </form>
                         </div>
