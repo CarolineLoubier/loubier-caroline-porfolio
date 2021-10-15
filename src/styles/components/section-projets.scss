@@ -182,15 +182,11 @@
             transition: 0.5s ease-in-out;
         }
 
-        .grow .swiper-slide:hover {
-            flex-basis: 40%;
+        .grow:hover .swiper-slide {
+            flex-basis: 15%;
         }
 
-        .grow .swiper-slide:first-child:hover {
-            flex-basis: 40%;
-        }
-
-        .grow .swiper-slide:last-child:hover {
+        .grow:hover .swiper-slide:hover {
             flex-basis: 40%;
         }
     }

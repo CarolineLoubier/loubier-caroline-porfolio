@@ -75,14 +75,6 @@
         }
     }
 
-    /* @supports (-webkit-text-stroke: 1px var(--color-secondary)) {
-        .nav__item {
-            letter-spacing: 0.1em;
-            -webkit-text-stroke: 1px var(--color-secondary);
-            -webkit-text-fill-color: var(--color-bg-primary);
-        }
-    }*/
-
     .nav--primary {
         background-color: var(--color-bg-primary);
         height: 100vh;
@@ -136,7 +128,7 @@
 
 @media screen and (min-width: $breakpoint-md) {
     .header {
-        padding: var(--spacing-lg);
+        //padding: var(--spacing-lg);
         height: 120px;
 
         .header__toggle {
