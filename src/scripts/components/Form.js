@@ -34,14 +34,13 @@ export default class Form {
   }
 
   onSubmit(event) {
-    event.preventDefault();
-
     // Appelle la méthode de confirmation si tout est valide
     if (this.validate()) {
       console.log('succes');
-      this.showConfirmation();
+      // this.showConfirmation();
     } else {
       console.log('fail');
+      event.preventDefault();
     }
   }
   /**
@@ -88,7 +87,7 @@ export default class Form {
   }
 
   // Afficher le message de confirmation
-  showConfirmation() {
+  /* showConfirmation() {
     this.element.classList.add('is-sent');
-  }
+  }*/
 }
