@@ -10,9 +10,8 @@
     }
 
     .photo {
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         width: 100%;
-        max-width: 767px;
+        object-fit: scale-down;
     }
 
     .a-propos__photo {
@@ -26,24 +25,6 @@
         }
     }
 
-    .losange {
-        position: absolute;
-        width: 30%;
-        height: 30%;
-        border: 17px solid rgba(0, 179, 255, 0.5);
-        top: 55%;
-        left: 10%;
-        z-index: 2;
-        transform: rotate(45deg);
-
-        @media screen and (min-width: $breakpoint-sm) {
-            width: 200px;
-            height: 200px;
-            border: 30px solid rgba(0, 179, 255, 0.5);
-            left: 5%;
-        }
-    }
-
     .text--bold {
         font-weight: 600;
         color: var(--color-secondary);
@@ -52,10 +33,6 @@
     .a-propos__texte {
         margin: 35px 0;
         line-height: 200%;
-
-        @media screen and (min-width: $breakpoint-md) {
-            font-size: var(--font-size-content-desk);
-        }
 
         @media screen and (min-width: $breakpoint-md) {
             width: 40%;
@@ -74,6 +51,10 @@
 
     .a-propos__qualites {
         height: 100vh;
+
+        h2 {
+            margin-bottom: 120px;
+        }
     }
     .qualite {
         display: flex;
@@ -92,25 +73,27 @@
             -webkit-text-stroke: 1px var(--color-tertiary);
             -webkit-text-fill-color: var(--color-bg-primary);
             -webkit-font-smoothing: antialiased;
-            position: relative;
+            position: absolute;
+            bottom: 0;
+            left: -10%;
             line-height: 100%;
+            z-index: -1;
+            padding-left: 10%;
 
             @media screen and (min-width: $breakpoint-md) {
                 font-size: 144px;
             }
+        }
+        h3 {
+            position: relative;
 
-            h3 {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                -webkit-text-stroke: 0px;
-                -webkit-text-fill-color: var(--color-primary);
-                margin: 0;
+            -webkit-text-stroke: 0px;
+            -webkit-text-fill-color: var(--color-primary);
+            margin: 20px 0;
 
-                @media screen and (min-width: $breakpoint-md) {
-                    font-size: var(--font-size-h2-smaller-desk);
-                    margin: 0;
-                }
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: var(--font-size-h2-smaller-desk);
+                margin: 50px 0;
             }
         }
         p {
@@ -121,8 +104,12 @@
             letter-spacing: normal;
 
             @media screen and (min-width: $breakpoint-md) {
-                font-size: var(--font-size-content-desk);
-                margin: 0 0 0 30%;
+                margin-left: auto;
+                text-align: right;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 25%;
             }
         }
     }
@@ -223,8 +210,8 @@
             }
 
             .competence--container {
-                width: 180px;
-                height: 180px;
+                width: 150px;
+                height: 150px;
 
                 p {
                     transform: translateX(-50%) translateY(200%);
