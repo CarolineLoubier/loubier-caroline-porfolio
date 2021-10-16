@@ -197,4 +197,8 @@
 
 .site-container {
     overflow-x: hidden;
+
+    @media screen and (min-width: $breakpoint-md) {
+        overflow-y: hidden;
+    }
 }
