@@ -14,10 +14,16 @@
         object-fit: scale-down;
     }
 
+    .a-propos__section {
+        height: 100vh;
+    }
+
     .a-propos__photo {
         position: relative;
         display: flex;
         justify-content: center;
+        width: 75%;
+        margin: 0 auto;
 
         @media screen and (min-width: $breakpoint-md) {
             width: 45%;
@@ -127,6 +133,7 @@
     // Mes compétences
 
     .a-propos__competences {
+        height: 100vh;
         .swiper-slide-active .competence--container {
             border: 2px solid rgba(0, 179, 255, 1);
 
