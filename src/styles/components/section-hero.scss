@@ -24,7 +24,7 @@
         span {
             font-size: var(--font-size-h1-smaller);
             -webkit-text-stroke: 1px var(--color-primary);
-            -webkit-text-fill-color: var(--color-bg-primary);
+            -webkit-text-fill-color: transparent;
         }
     }
 
@@ -49,7 +49,7 @@
     }
 
     button {
-        background-color: rgba($color: #000000, $alpha: 0);
+        background-color: transparent;
         border: none;
         animation: translate-button 1s ease-in-out alternate infinite;
         margin-top: 15px;

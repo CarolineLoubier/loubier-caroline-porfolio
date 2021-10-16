@@ -8,6 +8,7 @@ export default class Header {
     this.element = element;
     this.html = document.documentElement;
     this.initNavMobile();
+    this.clickElementNav();
   }
 
   /**
@@ -23,5 +24,13 @@ export default class Header {
    */
   onToggleleNav() {
     this.html.classList.toggle('nav-is-active');
+  }
+
+  clickElementNav() {
+    let navElements = this.element.querySelectorAll('.nav__item');
+    for (let i = 0; i < navElements.length; i++) {
+      const navElement = navElements[i];
+      navElement.addEventListener('click', this.onToggleleNav.bind(this));
+    }
   }
 }

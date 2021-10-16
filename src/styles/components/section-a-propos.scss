@@ -77,7 +77,7 @@
             font-size: 80px;
             font-family: var(--font-primary);
             -webkit-text-stroke: 1px var(--color-tertiary);
-            -webkit-text-fill-color: var(--color-bg-primary);
+            -webkit-text-fill-color: transparent;
             -webkit-font-smoothing: antialiased;
             position: absolute;
             bottom: 0;
@@ -179,7 +179,7 @@
                 font-family: var(--font-primary);
                 font-size: 16px;
                 -webkit-text-stroke: 0.5px var(--color-secondary);
-                -webkit-text-fill-color: var(--color-bg-primary);
+                -webkit-text-fill-color: transparent;
                 -webkit-font-smoothing: antialiased;
                 letter-spacing: 0.105em;
             }
@@ -196,7 +196,7 @@
 
                 p {
                     -webkit-text-stroke: 0.5px var(--color-secondary);
-                    -webkit-text-fill-color: var(--color-bg-primary);
+                    -webkit-text-fill-color: transparent;
                 }
             }
 
