@@ -77,6 +77,9 @@
                             src="assets/images/contexte-piano.png"
                             alt="Piano servant de modèle"
                             class="photo__projet photo--left"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-photos"
+                            data-modal-title="Photo du piano que j’ai utilisé comme référence"
                         />
 
                         <p class="legende legende--left">
@@ -121,10 +124,13 @@
                             src="assets/images/processus-piano.png"
                             alt="Piano servant de modèle"
                             class="photo__projet photo--left"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-photos"
+                            data-modal-title="Modélisation avant l'application de textures"
                         />
 
                         <p class="legende legende--left">
-                            Photo du piano que j’ai utilisé comme référence
+                            Modélisation avant l'application de textures
                         </p>
                     </div>
                     <div class="processus__description">
@@ -156,6 +162,9 @@
                             src="assets/images/defis-piano.png"
                             alt="Piano servant de modèle"
                             class="photo__projet photo--left"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-photos"
+                            data-modal-title="Vue rapprochée du modèle"
                         />
 
                         <p class="legende legende--left">
@@ -191,6 +200,23 @@
                     </div>
                 </div>
             </section>
+
+            <template id="tpl-modal-photos">
+                <div class="modal">
+                    <div class="modal__scrim"></div>
+                    <div class="modal__box">
+                        <div class="modal__content">
+                            <img
+                                src="../assets/images/hero-piano.png"
+                                alt="Piano"
+                                class="modal__img"
+                            />
+                            <h2>{{title}}</h2>
+                        </div>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div>
+            </template>
         </div>
     </body>
 </html>

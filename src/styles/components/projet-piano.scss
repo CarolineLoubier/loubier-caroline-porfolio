@@ -102,6 +102,10 @@
 .projet__defis {
     padding-top: 60px;
 
+    .photo__projet {
+        cursor: pointer;
+    }
+
     .contexte__details,
     .contexte__details h3 {
         font-family: var(--font-secondary);
