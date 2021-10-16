@@ -91,149 +91,184 @@
     }
 }
 
+.projet__defis {
+    padding-bottom: var(--spacing-lg);
+}
+
 // Section contexte
 
-.projet__contexte, .projet__processus, .projet__defis{
-
+.projet__contexte,
+.projet__processus,
+.projet__defis {
     padding-top: 60px;
-    
-    .contexte__details, .contexte__details h3{
+
+    .contexte__details,
+    .contexte__details h3 {
         font-family: var(--font-secondary);
         font-size: var(--font-size-h3-smaller);
     }
 
-h3 {
+    h3 {
         color: var(--color-secondary);
         margin: 60px 0 35px 0;
     }
-    
-.logiciel {
+
+    .logiciel {
         max-width: 26px;
     }
 
-.logiciel__container {
-    border: 2px solid rgba(0, 179, 255, 0.5);
-    width: 50px;
-    height: 50px;
-    transform: rotate(45deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-
-    img {
-        transform: rotate(-45deg);
-    }
-}
-
-.credits__container {
-    
-    a {
-        color: var(--color-tertiary);
-        transition: .3s ease-in;
-    }
-
-    a:hover {
-        color: var(--color-secondary);
-    }
-    
-}
-
-.logiciel__container, .credits__container {
-    margin-bottom: 60px;
-}
-
-.legende {
-    font-size: var(--font-size-xsmall);
-    text-align: center;
-}
-
-.contexte__description, .processus__description, .defis__description {
-    margin: 60px 0;
-}
-
-@media screen and (min-width:$breakpoint-md){
-
-    height: 100vh;
-    padding-top: 120px;
-    display: flex;
-    align-items: center;
-
-
-    .contexte__container, .processus__container, .defis__container {
-        display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-
-    h3 {
-        margin-top: 0;
-    }
-
-    h2 {
-        margin-bottom: 0;
-    }
-    
-
-        .contexte__title, .defis__title {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        }
-
-        .processus__title {
-            grid-column: 2/-1;
-        grid-row: 1/2;
-        }
-
-        .contexte__description {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin-top: 20px;
-        }
-
-        .defis__description {
-            grid-column: 1/2;
-        grid-row: 2/-1;
-        margin-top: 20px;
-        }
-
-
-        .processus__description {
-            grid-column: 2/-1;
-        grid-row: 2/-1;
-        margin-top: 20px;
-        }
-
-        .photo__container--right {
-        grid-column: 2/3;
-        grid-row: 1/-1;
+    .logiciel__container {
+        border: 2px solid rgba(0, 179, 255, 0.5);
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
         display: flex;
-        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        margin-left: var(--spacing-lg);
+        margin: 0;
+
+        img {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .credits__container {
+        a {
+            color: var(--color-tertiary);
+            transition: 0.3s ease-in;
         }
 
-        .photo__container--left {
-            grid-column: 1/2;
-            grid-row: 1/-1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-right: var(--spacing-lg);
+        a:hover {
+            color: var(--color-secondary);
+        }
+    }
+
+    .logiciel__container,
+    .credits__container {
+        margin-bottom: 60px;
+    }
+
+    .legende {
+        font-size: var(--font-size-xsmall);
+        text-align: center;
+    }
+
+    .contexte__description,
+    .processus__description,
+    .defis__description {
+        margin: 60px 0;
+    }
+
+    .btn-back a {
+        display: flex;
+        align-items: center;
+        color: var(--color-tertiary);
+        letter-spacing: 0.1em;
+
+        &:hover {
+            color: var(--color-secondary);
+            img {
+                transform: translateX(-30px);
+            }
+        }
+
+        .losange {
+            position: relative;
+            background-image: url('../../assets/images/losange.svg');
+            background-position: 50%;
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+
+            img {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        p {
+            margin-left: 60px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        height: 100vh;
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+
+        .contexte__container,
+        .processus__container,
+        .defis__container {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+
+            h3 {
+                margin-top: 0;
             }
 
-        .contexte__details {
-        display: flex;
-        justify-content: space-between;
-        grid-column: 1/2;
-        grid-row: 3/-1;
+            h2 {
+                margin-bottom: 0;
+            }
+
+            .contexte__title,
+            .defis__title {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            .processus__title {
+                grid-column: 2/-1;
+                grid-row: 1/2;
+            }
+
+            .contexte__description {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                margin-top: 20px;
+            }
+
+            .defis__description {
+                grid-column: 1/2;
+                grid-row: 2/-1;
+                margin-top: 20px;
+            }
+
+            .processus__description {
+                grid-column: 2/-1;
+                grid-row: 2/-1;
+                margin-top: 20px;
+            }
+
+            .photo__container--right {
+                grid-column: 2/3;
+                grid-row: 1/-1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: var(--spacing-lg);
+            }
+
+            .photo__container--left {
+                grid-column: 1/2;
+                grid-row: 1/-1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-right: var(--spacing-lg);
+            }
+
+            .contexte__details {
+                display: flex;
+                justify-content: space-between;
+                grid-column: 1/2;
+                grid-row: 3/-1;
+            }
         }
-
     }
-    
-
-}
 }
 
 // Section processus
-
-
