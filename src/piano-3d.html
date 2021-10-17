@@ -10,7 +10,7 @@
         <script src="scripts/main.js" defer></script>
     </head>
 
-    <body>
+    <body data-component="Cursor">
         <div class="site-container">
             <header class="header" data-component="Header">
                 <div class="wrapper">
@@ -53,7 +53,7 @@
                 </div>
             </header>
 
-            <section class="hero--piano">
+            <section class="hero--piano section">
                 <div class="hero-piano__container wrapper">
                     <h1 class="title--section">Piano</h1>
                     <div class="info__projet">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projet__contexte wrapper">
+            <section class="projet__contexte wrapper section">
                 <div class="contexte__container">
                     <h2 class="contexte__title title--section">
                         <span>Le</span><br />contexte
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projet__processus wrapper">
+            <section class="projet__processus wrapper section">
                 <div class="processus__container">
                     <h2 class="processus__title title--section">
                         <span>Le</span><br />processus
@@ -152,7 +152,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projet__defis wrapper">
+            <section class="projet__defis wrapper section">
                 <div class="defis__container">
                     <h2 class="defis__title title--section">
                         <span>Les</span><br />defis
@@ -200,23 +200,23 @@
                     </div>
                 </div>
             </section>
-
-            <template id="tpl-modal-photos">
-                <div class="modal">
-                    <div class="modal__scrim"></div>
-                    <div class="modal__box">
-                        <div class="modal__content">
-                            <img
-                                src="../assets/images/hero-piano.png"
-                                alt="Piano"
-                                class="modal__img"
-                            />
-                            <h2>{{title}}</h2>
-                        </div>
-                        <button class="modal__close js-close"></button>
-                    </div>
-                </div>
-            </template>
         </div>
+
+        <template id="tpl-modal-photos">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <div class="modal__content">
+                        <img
+                            src="../assets/images/hero-piano.png"
+                            alt="Piano"
+                            class="modal__img"
+                        />
+                        <h2>{{title}}</h2>
+                    </div>
+                    <button class="modal__close js-close"></button>
+                </div>
+            </div>
+        </template>
     </body>
 </html>

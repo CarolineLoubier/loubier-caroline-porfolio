@@ -31,6 +31,8 @@
 // C’est là que la majorité de notre travail a lieu.
 @import '../../node_modules/swiper/swiper.scss';
 
+@import 'components/cursor.scss';
+@import 'components/section-scroll.scss';
 @import 'components/icons.scss';
 @import 'components/header.scss';
 @import 'components/section-hero.scss';

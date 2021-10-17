@@ -110,6 +110,7 @@
     .input__label {
         display: block;
         font-weight: 400;
+        cursor: none;
     }
 
     .input__element {
@@ -125,6 +126,7 @@
         margin-bottom: 35px;
         transition: 0.3s ease-in;
         color: var(--color-secondary);
+        cursor: text;
 
         &:-webkit-autofill,
         &:-webkit-autofill:active {
@@ -154,6 +156,7 @@
     }
 
     .textarea {
+        cursor: text;
         .input__element {
             resize: vertical;
             height: 150px;

@@ -7,13 +7,13 @@
     background-color: rgba($color: #000000, $alpha: 0);
     padding: 15px 30px;
     color: var(--color-tertiary);
+    cursor: none;
 
     transition: 0.3s ease-in;
 
     &:hover {
         border: 2px solid rgba(0, 179, 255, 1);
         color: var(--color-secondary);
-        cursor: pointer;
     }
 
     a {

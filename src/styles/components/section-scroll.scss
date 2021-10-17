@@ -1,0 +1,18 @@
+/* ==========================================================================
+ Section Scroll / Components
+ ========================================================================== */
+
+/*.site-container {
+    @media screen and (min-width: $breakpoint-md) {
+        scroll-snap-type: y mandatory;
+        scroll-snap-points-y: repeat(100vh);
+        height: 100vh;
+    }
+
+    .section {
+        @media screen and (min-width: $breakpoint-md) {
+            scroll-snap-align: start;
+            overflow-y: scroll;
+        }
+    }
+}*/
