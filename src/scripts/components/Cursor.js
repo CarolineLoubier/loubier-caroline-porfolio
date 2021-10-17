@@ -17,7 +17,9 @@ export default class Cursor {
   init() {
     console.log('Nouvelle instance de la composante -> Cursor');
 
-    let links = document.querySelectorAll('a, button, input, textarea');
+    let links = document.querySelectorAll(
+      'a, button, input, textarea, .photo__projet'
+    );
     for (let i = 0; i < links.length; i++) {
       const link = links[i];
       link.addEventListener('mouseover', this.growCursor.bind(this));
