@@ -53,172 +53,210 @@
                 </div>
             </header>
 
-            <section class="hero--foret section">
-                <div class="hero-foret__container wrapper">
-                    <h1 class="title--section">La foret aux tresors</h1>
-                    <div class="info__projet">
-                        <div class="info__left">
-                            <h2 class="title--section stroke">Jeu 2D</h2>
-                            <h3>Projet scolaire</h3>
+            <div class="projet--foret">
+                <section class="hero--foret section">
+                    <div class="hero-foret__container wrapper">
+                        <h1 class="title--section">La foret aux tresors</h1>
+                        <div class="info__projet">
+                            <div class="info__left">
+                                <h2 class="title--section stroke">Jeu 2D</h2>
+                                <h3>Projet scolaire</h3>
+                            </div>
+                            <button class="btn btn--large">
+                                <a href="#">Voir le projet</a>
+                            </button>
                         </div>
-                        <button class="btn btn--large">
-                            <a href="#">Voir le projet</a>
-                        </button>
                     </div>
-                </div>
-            </section>
-            <section class="projet__contexte wrapper section">
-                <div class="contexte__container">
-                    <h2 class="contexte__title title--section">
-                        <span>Le</span><br />contexte
-                    </h2>
-                    <div class="photo__container photo__container--right">
-                        <img
-                            src="assets/images/contexte-foret.png"
-                            alt="Écran d’accueil du jeu"
-                            class="photo__projet photo--left"
-                            data-component="Modal"
-                            data-modal-id="tpl-modal-photos"
-                            data-modal-title="Écran d’accueil du jeu"
-                        />
+                </section>
+                <section class="projet__contexte wrapper section">
+                    <div class="contexte__container">
+                        <h2 class="contexte__title title--section">
+                            <span>Le</span><br />contexte
+                        </h2>
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/contexte-foret.png"
+                                alt="Écran d’accueil du jeu"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Écran d’accueil du jeu"
+                            />
 
-                        <p class="legende legende--left">
-                            Écran d’accueil du jeu
+                            <p class="legende legende--left">
+                                Écran d’accueil du jeu
+                            </p>
+                        </div>
+                        <p class="contexte__description">
+                            Le but de ce projet était de programmer un jeu de
+                            plateforme 2D en utilisant la plateforme de
+                            développement Unity. Le jeu devait contenir un écran
+                            d’accueil, un écran de fin ainsi que trois niveaux.
+                            Les décors, personnages et autres éléments ont été
+                            acheté ou obtenus sur le Unity Asset Store.
                         </p>
+                        <div class="contexte__details">
+                            <div class="contexte__logiciels">
+                                <h3>Logiciels utilisés</h3>
+                                <div class="logiciel__list">
+                                    <div class="logiciel__container">
+                                        <a href="https://unity.com/">
+                                            <img
+                                                src="assets/images/unity.svg"
+                                                alt="Unity"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="logiciel__container">
+                                        <a
+                                            href="https://visualstudio.microsoft.com/fr/"
+                                        >
+                                            <img
+                                                src="assets/images/visual-studio.svg"
+                                                alt="Visual Studio"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contexte__credits">
+                                <h3>Images utilisées:</h3>
+                                <div class="credits__container">
+                                    <a
+                                        href="https://assetstore.unity.com/packages/2d/characters/jungle-platformer-characters-66222"
+                                        >Jungle Platformer Characters - Foxin
+                                    </a>
+                                    <a
+                                        href="https://assetstore.unity.com/packages/2d/environments/bamboo-forest-platformer-tileset-155597"
+                                        >Bamboo Forest - Zuhria A
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="contexte__description">
-                        Le but de ce projet était de programmer un jeu de plateforme 2D en utilisant la plateforme de développement Unity. Le jeu devait contenir un écran d’accueil, un écran de fin ainsi que trois niveaux. Les décors, personnages et autres éléments ont été acheté ou obtenus sur le Unity Asset Store.
-                    </p>
-                    <div class="contexte__details">
-                        <div class="contexte__logiciels">
-                            <h3>Logiciels utilisés</h3>
-                            <div class="logiciel__list">
-                            <div class="logiciel__container">
-                                <a href="https://unity.com/">
+                </section>
+                <section class="projet__processus wrapper section">
+                    <div class="processus__container">
+                        <h2 class="processus__title title--section">
+                            <span>Le</span><br />processus
+                        </h2>
+                        <div class="photo__container photo__container--left">
+                            <img
+                                src="assets/images/processus-foret.png"
+                                alt="Intégration des éléments dans la scêne et leurs boîtes de collision"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Intégration des éléments dans la scêne et leurs boîtes de collision"
+                            />
+
+                            <p class="legende legende--left">
+                                Intégration des éléments dans la scêne et leurs
+                                boîtes de collision
+                            </p>
+                        </div>
+                        <div class="processus__description">
+                            <p>
+                                Après avoir choisi les éléments visuels que
+                                j’allais utiliser, j’ai d’abord construit le
+                                premier niveau en intégrant les différentes
+                                tuiles, le décor et les personnages dans Unity.
+                                J’ai ajouté une boîte de collision sur chacun
+                                des éléments afin qu’ils puissent interagir avec
+                                le personnage.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="projet__processus__suite wrapper section">
+                    <div class="processus__container__suite">
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/processus-foret-suite.png"
+                                alt="Niveau 1 du jeu utilisant la caméra fixe"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Niveau 1 du jeu utilisant la caméra fixe"
+                            />
+
+                            <p class="legende legende--left">
+                                Niveau 1 du jeu utilisant la caméra fixe
+                            </p>
+                        </div>
+                        <div class="processus__description__suite">
+                            <p>
+                                Après avoir préparé la scène, j’ai créé le
+                                script permettant au personnage de se déplacer à
+                                l’aide des flèches du clavier et de sauter. J’ai
+                                ajusté la scène pour qu’il soit possible au
+                                joueur de se déplacer aux endroits voulus tout
+                                en garder un niveau de difficulté raisonnable.
+                            </p>
+                            <p>
+                                Le joueur doit relevés certains défis afin de
+                                réussir le niveau. Il doit récolter toute les
+                                pièces, y compris celles dans le coffre fermé à
+                                clef, éviter les ennemis et ne pas tomber dans
+                                l’eau avant que le compte à rebours ne soit
+                                terminé.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projet__defis wrapper section">
+                    <div class="defis__container">
+                        <h2 class="defis__title title--section">
+                            <span>Les</span><br />defis
+                        </h2>
+                        <div class="photo__container photo__container--left">
+                            <img
+                                src="assets/images/processus-foret-suite.png"
+                                alt="Niveau deux utilisant la caméra Cinemachine"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Niveau deux utilisant la caméra Cinemachine"
+                            />
+
+                            <p class="legende legende--left">
+                                Niveau deux utilisant la caméra Cinemachine
+                            </p>
+                        </div>
+                        <div class="defis__description">
+                            <p>
+                                Le principal défi était de reproduire le sujet
+                                de façon réaliste. Pour cela, j’ai d’abord fait
+                                une recherche poussée de textures de qualité et
+                                libres de droits. J’ai ensuite visionné des
+                                tutoriels pour faire des rendus réalistes,
+                                notamment en ajoutant de la poussière sur le
+                                modèle.
+                            </p>
+                            <p>
+                                Au final, cet exercice m’a permis d’apprendre à
+                                planifier un projet dans son entièreté et de
+                                m’adapter aux problèmes rencontrés lors de sa
+                                réalisation.
+                            </p>
+                        </div>
+                        <div class="btn-back">
+                            <a href="index.html#projets">
+                                <div class="losange">
                                     <img
-                                    src="assets/images/unity.svg"
-                                    alt="Unity"
-                                    class="logiciel"
+                                        src="assets/images/back-btn.svg"
+                                        alt="Retour aux projets"
                                     />
-                                </a>
-                            </div>
-                            <div class="logiciel__container">
-                                <a href="https://visualstudio.microsoft.com/fr/">
-                                    <img
-                                    src="assets/images/visual-studio.svg"
-                                    alt="Visual Studio"
-                                    class="logiciel"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="contexte__credits">
-                            <h3>Images utilisées:</h3>
-                            <div class="credits__container">
-                                <a href="https://assetstore.unity.com/packages/2d/characters/jungle-platformer-characters-66222">Jungle Platformer Characters - Foxin </a>
-                                <a href="https://assetstore.unity.com/packages/2d/environments/bamboo-forest-platformer-tileset-155597">Bamboo Forest - 
-                                    Zuhria A </a>
-                            </div>
+                                </div>
+                                <p>Retour aux projets</p>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="projet__processus wrapper section">
-                <div class="processus__container">
-                    <h2 class="processus__title title--section">
-                        <span>Le</span><br />processus
-                    </h2>
-                    <div class="photo__container photo__container--left">
-                        <img
-                            src="assets/images/processus-foret.png"
-                            alt="Intégration des éléments dans la scêne et leurs boîtes de collision"
-                            class="photo__projet photo--left"
-                            data-component="Modal"
-                            data-modal-id="tpl-modal-photos"
-                            data-modal-title="Intégration des éléments dans la scêne et leurs boîtes de collision"
-                        />
-
-                        <p class="legende legende--left">
-                            Intégration des éléments dans la scêne et leurs boîtes de collision
-                        </p>
-                    </div>
-                    <div class="processus__description">
-                        <p>
-                            Après avoir choisi les éléments visuels que j’allais utiliser, j’ai d’abord construit le premier niveau en intégrant les différentes tuiles, le décor et les personnages dans Unity. J’ai ajouté une boîte de collision sur chacun des éléments afin qu’ils puissent interagir avec le personnage.
-                        </p>
-
-                    </div>
-                </div>
-            </section>
-            <section class="projet__processus__suite wrapper section">
-                <div class="processus__container__suite">
-                    <div class="photo__container photo__container--right">
-                        <img
-                            src="assets/images/processus-foret-suite.png"
-                            alt="Niveau 1 du jeu utilisant la caméra fixe"
-                            class="photo__projet photo--left"
-                            data-component="Modal"
-                            data-modal-id="tpl-modal-photos"
-                            data-modal-title="Niveau 1 du jeu utilisant la caméra fixe"
-                        />
-
-                        <p class="legende legende--left">
-                            Niveau 1 du jeu utilisant la caméra fixe
-                        </p>
-                    </div>
-                    <div class="processus__description__suite">
-                        <p>
-                            Après avoir préparé la scène, j’ai créé le script permettant au personnage de se déplacer à l’aide des flèches du clavier et de sauter. J’ai ajusté la scène pour qu’il soit possible au joueur de se déplacer aux endroits voulus tout en garder un niveau de difficulté raisonnable.
-                        </p>
-                        <p>
-                            Le joueur doit relevés certains défis afin de réussir le niveau. Il doit récolter toute les pièces, y compris celles dans le coffre fermé à clef, éviter les ennemis et ne pas tomber dans l’eau avant que le compte à rebours ne soit terminé. 
-                        </p>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section class="projet__defis wrapper section">
-                <div class="defis__container">
-                    <h2 class="defis__title title--section">
-                        <span>Les</span><br />defis
-                    </h2>
-                    <div class="photo__container photo__container--left">
-                        <img
-                            src="assets/images/processus-foret-suite.png"
-                            alt="Niveau deux utilisant la caméra Cinemachine"
-                            class="photo__projet photo--left"
-                            data-component="Modal"
-                            data-modal-id="tpl-modal-photos"
-                            data-modal-title="Niveau deux utilisant la caméra Cinemachine"
-                        />
-
-                        <p class="legende legende--left">
-                            Niveau deux utilisant la caméra Cinemachine
-                        </p>
-                    </div>
-                    <div class="defis__description">
-                        <p>
-                            Le principal défi était de reproduire le sujet de façon réaliste. Pour cela, j’ai d’abord fait une recherche poussée de textures de qualité et libres de droits. J’ai ensuite visionné des tutoriels pour faire des rendus réalistes, notamment en ajoutant de la poussière sur le modèle.
-                        </p>
-                        <p>
-                            Au final, cet exercice m’a permis d’apprendre à planifier un projet dans son entièreté et de m’adapter aux problèmes rencontrés lors de sa réalisation.
-                        </p>
-                    </div>
-                    <div class="btn-back">
-                        <a href="index.html#projets">
-                            <div class="losange">
-                                <img
-                                    src="assets/images/back-btn.svg"
-                                    alt="Retour aux projets"
-                                />
-                            </div>
-                            <p>Retour aux projets</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
 
         <template id="tpl-modal-photos">

@@ -134,14 +134,21 @@
 
     .a-propos__competences {
         height: 100vh;
-        .swiper-slide-active .competence--container {
+
+        img {
+            transform: rotate(45deg);
+            max-width: 40%;
+            transition: 0.3s ease-in;
+            transform-origin: 50%;
+            filter: brightness(0) saturate(100%) invert(85%) sepia(0%)
+                saturate(0%) hue-rotate(149deg) brightness(89%) contrast(92%);
+        }
+        .competence--container:hover {
             border: 2px solid rgba(0, 179, 255, 1);
 
             img {
                 max-width: 60%;
-                filter: brightness(0) saturate(100%) invert(100%) sepia(1%)
-                    saturate(6109%) hue-rotate(291deg) brightness(88%)
-                    contrast(108%);
+                filter: none;
             }
 
             p {
@@ -153,8 +160,9 @@
         .competence--container {
             border: 2px solid rgba(0, 179, 255, 0.5);
             transform: rotate(-45deg);
-            width: 100px;
-            height: 100px;
+            width: 75px;
+            height: 75px;
+
             margin: 0;
             padding: 0;
             position: relative;
@@ -164,11 +172,14 @@
             justify-content: center;
             transition: 0.3s ease-in;
 
-            img {
-                transform: rotate(45deg);
-                max-width: 40%;
-                transition: 0.3s ease-in;
-                transform-origin: 50%;
+            @media screen and (min-width: $breakpoint-xs) {
+                width: 100px;
+                height: 100px;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                width: 150px;
+                height: 150px;
             }
 
             p {
@@ -177,16 +188,77 @@
                 left: 50%;
                 transform: translateX(-50%) translateY(160%);
                 font-family: var(--font-primary);
-                font-size: 16px;
+                font-size: 12px;
                 -webkit-text-stroke: 0.5px var(--color-secondary);
                 -webkit-text-fill-color: transparent;
                 -webkit-font-smoothing: antialiased;
                 letter-spacing: 0.105em;
+                margin: 12px 0;
+
+                @media screen and (min-width: $breakpoint-xs) {
+                    margin: 30px 0;
+                }
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    margin: 60px 0;
+                }
+
+                @media screen and (min-width: $breakpoint-sm) {
+                    margin: 40px 0;
+                }
+            }
+        }
+
+        .competences__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin: 0;
+            gap: 100px 0px;
+
+            .competence {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                margin: 0 40px;
+
+                gap: 50px 0px;
+                .competence:nth-child(1) {
+                    grid-column: 1/2;
+                }
+
+                .competence:nth-child(2) {
+                    grid-column: 3/4;
+                }
+
+                .competence:nth-child(3) {
+                    grid-column: 5/6;
+                }
+
+                .competence:nth-child(4) {
+                    grid-column: 2/3;
+                    grid-row: 2;
+                }
+
+                .competence:nth-child(5) {
+                    grid-column: 4/5;
+                    grid-row: 2;
+                }
+
+                .competence:nth-child(6) {
+                    grid-column: 6/7;
+                    grid-row: 2;
+                }
             }
         }
 
         @media screen and (min-width: $breakpoint-md) {
-            .swiper-slide-active .competence--container {
+            .competence--container {
                 border: 2px solid rgba(0, 179, 255, 0.5);
 
                 img {
@@ -200,7 +272,7 @@
                 }
             }
 
-            .swiper-slide:hover .competence--container {
+            .competence--container:hover {
                 border: 2px solid rgba(0, 179, 255, 1);
 
                 img {
@@ -223,42 +295,6 @@
                 p {
                     transform: translateX(-50%) translateY(200%);
                     font-size: var(--font-size-content-desk);
-                }
-            }
-
-            .swiper-wrapper {
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                margin: 0 40px;
-
-                gap: 50px 0px;
-
-                .swiper-slide:nth-child(1) {
-                    grid-column: 1/2;
-                }
-
-                .swiper-slide:nth-child(2) {
-                    grid-column: 3/4;
-                }
-
-                .swiper-slide:nth-child(3) {
-                    grid-column: 5/6;
-                }
-
-                .swiper-slide:nth-child(4) {
-                    grid-column: 2/3;
-                    grid-row: 2;
-                }
-
-                .swiper-slide:nth-child(5) {
-                    grid-column: 4/5;
-                    grid-row: 2;
-                }
-
-                .swiper-slide:nth-child(6) {
-                    grid-column: 6/7;
-                    grid-row: 2;
                 }
             }
 
