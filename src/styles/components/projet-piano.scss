@@ -131,6 +131,16 @@
             align-items: center;
             justify-content: center;
             margin: 0;
+            transition: 0.3s ease-in;
+
+            &:hover {
+                border-color: var(--color-primary);
+
+                img {
+                    filter: none;
+                    transition: 0.3s ease-in;
+                }
+            }
 
             a {
                 display: flex;
@@ -140,6 +150,9 @@
 
             img {
                 transform: rotate(-45deg);
+                filter: brightness(0) saturate(100%) invert(77%) sepia(53%)
+                    saturate(0%) hue-rotate(233deg) brightness(87%)
+                    contrast(95%);
             }
         }
 
