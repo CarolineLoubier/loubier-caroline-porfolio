@@ -69,6 +69,11 @@
         align-self: center;
     }
 
+    .cv-link {
+        display: flex;
+        justify-content: center;
+    }
+
     .cv:hover {
         border: 2px solid rgba(0, 179, 255, 1);
     }
@@ -79,8 +84,10 @@
     }
 
     .contact__form {
+        width: 100%;
         @media screen and (min-width: $breakpoint-md) {
             align-self: flex-start;
+            width: auto;
         }
     }
 
@@ -121,7 +128,6 @@
         padding: var(--input-padding);
         outline: none;
         width: 100%;
-        max-width: 550px;
         margin-top: 10px;
         margin-bottom: 35px;
         transition: 0.3s ease-in;
