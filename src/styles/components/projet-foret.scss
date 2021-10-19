@@ -182,8 +182,12 @@
         }
 
         .legende {
-            font-size: var(--font-size-xsmall);
+            font-size: var(--font-size-xxsmall);
             text-align: center;
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: var(--font-size-xsmall);
+            }
         }
 
         .contexte__description,
