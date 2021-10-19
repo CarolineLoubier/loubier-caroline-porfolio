@@ -1,35 +1,44 @@
 /* ==========================================================================
  Cursor / Components
  ========================================================================== */
-
-.inner-cursor {
-    position: fixed;
-    left: 10px;
-    width: 5px;
-    height: 5px;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    background-color: #fff;
-    mix-blend-mode: difference;
-    pointer-events: none;
-    transition: width 0.5s, height 0.5s;
-    z-index: 30;
-}
-
-.inner-cursor.grow {
-    width: 30px;
-    height: 30px;
-    transition: width 0.5s, height 0.5s;
-}
-
+.inner-cursor,
 .outer-cursor {
-    position: fixed;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    border: 1px solid #fff;
-    mix-blend-mode: difference;
-    pointer-events: none;
-    transition: 0.1s ease-out;
-    z-index: 30;
+    display: none;
+}
+
+@media (hover: hover) {
+    .inner-cursor {
+        display: block;
+        position: fixed;
+        left: 10px;
+        width: 5px;
+        height: 5px;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        background-color: #fff;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        transition: width 0.5s, height 0.5s;
+        z-index: 30;
+    }
+
+    .inner-cursor.grow {
+        display: block;
+        width: 30px;
+        height: 30px;
+        transition: width 0.5s, height 0.5s;
+    }
+
+    .outer-cursor {
+        display: block;
+        position: fixed;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        border: 1px solid #fff;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        transition: 0.1s ease-out;
+        z-index: 30;
+    }
 }
