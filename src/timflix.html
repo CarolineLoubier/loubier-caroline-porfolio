@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Caroline Loubier - TimFlix</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Cursor">
+        <div class="site-container">
+            <header class="header" data-component="Header">
+                <div class="wrapper">
+                    <div class="header__brand">
+                        <a href="index.html"
+                            ><img
+                                src="../assets/images/logo.svg"
+                                alt="Logo de Caroline Loubier"
+                        /></a>
+                    </div>
+                    <nav class="nav nav--primary">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav__item"
+                                    >Introduction</a
+                                >
+                            </li>
+                            <li>
+                                <a href="index.html#projets" class="nav__item"
+                                    >Projets</a
+                                >
+                            </li>
+                            <li>
+                                <a href="index.html#a-propos" class="nav__item"
+                                    >A propos</a
+                                >
+                            </li>
+                            <li>
+                                <a href="index.html#contact" class="nav__item"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="projet--timflix">
+                <section class="hero--timflix section">
+                    <div class="hero-timflix__container wrapper">
+                        <h1 class="title--section">TimFlix</h1>
+                        <div class="info__projet">
+                            <div class="info__left">
+                                <h2 class="title--section stroke">
+                                    Developpement web
+                                </h2>
+                                <h3>Projet scolaire</h3>
+                            </div>
+                            <a
+                                href="https://cloubier.dectim.ca/projets/cw3/tp-final/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                ><button class="btn btn--large">
+                                    Voir le projet
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="projet__contexte wrapper section">
+                    <div class="contexte__container">
+                        <h2 class="contexte__title title--section">
+                            <span>Le</span><br />contexte
+                        </h2>
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/timflix-contexte.png"
+                                alt="Le site s’adapte à plusieurs résolutions d’écran"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Le site s’adapte à plusieurs résolutions d’écran"
+                            />
+
+                            <p class="legende legende--left">
+                                Le site s’adapte à plusieurs résolutions d’écran
+                            </p>
+                        </div>
+                        <p class="contexte__description">
+                            Ce projet a été réalisé dans le cadre du cours
+                            Design d’expérience et Conception Web IV. Le but
+                            était de développer un site événementiel, du design
+                            jusqu’à l’intégration HTML, CSS et JavaScript. Le
+                            site porte sur Musicon, un festival fictif de
+                            musique de jeux vidéos.
+                        </p>
+                        <div class="contexte__details">
+                            <div class="contexte__logiciels">
+                                <h3>Logiciels</h3>
+                                <div class="logiciel__list">
+                                    <div class="logiciel__container">
+                                        <a
+                                            href="https://www.figma.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="assets/images/figma.svg"
+                                                alt="Figma"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="logiciel__container">
+                                        <a
+                                            href="https://code.visualstudio.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="assets/images/visual-studio-code.svg"
+                                                alt="Visual Studio Code"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contexte__credits">
+                                <h3>Images</h3>
+                                <div class="credits__container">
+                                    <a
+                                        href="https://www.pexels.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Pexels
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="projet__processus wrapper section">
+                    <div class="processus__container">
+                        <h2 class="processus__title title--section">
+                            <span>Le</span><br />design
+                        </h2>
+                        <div class="photo__container photo__container--left">
+                            <iframe
+                                class="photo--left"
+                                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                                width="800"
+                                height="450"
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FiuB8z0D4gmNxuWjBNFNYNe%2FLoubier-Caroline-Plan-de-travail-TP1%3Fnode-id%3D1376%253A88"
+                                allowfullscreen
+                            ></iframe>
+
+                            <p class="legende legende--left">
+                                Maquettes d’accueil du site version bureau
+                            </p>
+                        </div>
+                        <div class="processus__description">
+                            <p>
+                                Le design a été réalisé en plusieurs étapes avec
+                                Figma. J’ai d’abord construit un guide de style
+                                et un moodboard pour la direction artistique du
+                                site. J’ai ensuite construit des wireframes pour
+                                établir l’emplacement des éléments du site.
+                                Finalement, j’ai complété les maquettes en
+                                fournissant une version mobile et bureau. Les
+                                maquettes inclues une version prototypée qui
+                                donne un aperçu des interactions possibles.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="projet__processus__suite wrapper section">
+                    <div class="processus__container__suite">
+                        <h2 class="processus__title__suite title--section">
+                            <span>Les</span><br />integrations
+                        </h2>
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/musicon-integrations.png"
+                                alt="Programmation de la composante Snackbar en JavaScript"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Programmation de la composante Snackbar en JavaScript"
+                            />
+
+                            <p class="legende legende--left">
+                                Programmation de la composante Snackbar en
+                                JavaScript
+                            </p>
+                        </div>
+                        <div class="processus__description__suite">
+                            <p>
+                                Une fois le design terminé, j’ai développé le
+                                site web en HTML, CSS et JavaScript. J’ai ajusté
+                                le CSS pour que le site s’adapte peut importe
+                                l’appareil utilisé. Le site comporte plusieurs
+                                composantes JavaScript comme une snackbar
+                                utilisant le cache, une entête se cachant au
+                                défilement de la page et des carousels.
+                            </p>
+                        </div>
+                        <div class="btn-back">
+                            <a href="index.html#projets">
+                                <div class="losange">
+                                    <img
+                                        src="assets/images/back-btn.svg"
+                                        alt="Retour aux projets"
+                                    />
+                                </div>
+                                <p>Retour aux projets</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <template id="tpl-modal-photos">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <div class="modal__content">
+                        <img
+                            src="../assets/images/hero-piano.png"
+                            alt="Projet"
+                            class="modal__img"
+                        />
+                        <h2>{{title}}</h2>
+                    </div>
+                    <button class="modal__close js-close"></button>
+                </div>
+            </div>
+        </template>
+
+        <div class="inner-cursor"></div>
+        <div class="outer-cursor"></div>
+    </body>
+</html>

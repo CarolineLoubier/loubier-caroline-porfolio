@@ -354,7 +354,8 @@
                 }
 
                 .btn-back {
-                    grid-column: 2/-1;
+                    grid-column: 1/2;
+                    grid-row: 3/-1;
                 }
             }
         }
