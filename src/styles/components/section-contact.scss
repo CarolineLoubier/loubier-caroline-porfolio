@@ -2,6 +2,16 @@
  Section Contact / Components
  ========================================================================== */
 
+.confirm {
+    color: var(--color-primary);
+}
+
+.confirm__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact {
     padding-top: 60px;
     @media screen and (min-width: $breakpoint-md) {
