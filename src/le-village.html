@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Caroline Loubier - La Village</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Cursor">
+        <div class="site-container">
+            <header class="header" data-component="Header">
+                <div class="wrapper">
+                    <div class="header__brand">
+                        <a href="index.html"
+                            ><img
+                                src="../assets/images/logo.svg"
+                                alt="Logo de Caroline Loubier"
+                        /></a>
+                    </div>
+                    <nav class="nav nav--primary">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav__item"
+                                    >Introduction</a
+                                >
+                            </li>
+                            <li>
+                                <a href="index.html#projets" class="nav__item"
+                                    >Projets</a
+                                >
+                            </li>
+                            <li>
+                                <a href="index.html#a-propos" class="nav__item"
+                                    >A propos</a
+                                >
+                            </li>
+                            <li>
+                                <a href="index.html#contact" class="nav__item"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="projet--village">
+                <section class="hero--village section">
+                    <div class="hero-village__container wrapper">
+                        <h1 class="title--section">La foret aux tresors</h1>
+                        <div class="info__projet">
+                            <div class="info__left">
+                                <h2 class="title--section stroke">Jeu 2D</h2>
+                                <h3>Projet scolaire</h3>
+                            </div>
+                            <button class="btn btn--large">
+                                <a href="#">Voir le projet</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="projet__contexte wrapper section">
+                    <div class="contexte__container">
+                        <h2 class="contexte__title title--section">
+                            <span>Le</span><br />contexte
+                        </h2>
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/village-contexte.png"
+                                alt="Premier niveau du jeu se jouant à la première personne"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Premier niveau du jeu se jouant à la première personne"
+                            />
+
+                            <p class="legende legende--left">
+                                Premier niveau du jeu se jouant à la première
+                                personne
+                            </p>
+                        </div>
+                        <p class="contexte__description">
+                            Le but de ce projet était de programmer un jeu 3D
+                            programmé en C# en utilisant la plateforme de
+                            développement Unity. Le jeu devait contenir deux
+                            niveaux ayant des objectifs à réaliser. Tous les
+                            éléments 3D nous ont été founis sauf le Garford, la
+                            maison principale du jeu et le personnage.
+                        </p>
+                        <div class="contexte__details">
+                            <div class="contexte__logiciels">
+                                <h3>Logiciels</h3>
+                                <div class="logiciel__list">
+                                    <div class="logiciel__container">
+                                        <a
+                                            href="https://unity.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="assets/images/unity.svg"
+                                                alt="Unity"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="logiciel__container">
+                                        <a
+                                            href="https://visualstudio.microsoft.com/fr/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="assets/images/visual-studio.svg"
+                                                alt="Visual Studio"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="logiciel__container">
+                                        <a
+                                            href="https://www.blender.org/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="assets/images/blender.svg"
+                                                alt="Blender"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contexte__credits">
+                                <h3>Textures</h3>
+                                <div class="credits__container">
+                                    <a
+                                        href="https://www.textures.com/library"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Textures.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="projet__processus wrapper section">
+                    <div class="processus__container">
+                        <h2 class="processus__title title--section">
+                            <span>La</span><br />modélisation
+                        </h2>
+                        <div class="photo__container photo__container--left">
+                            <img
+                                src="assets/images/village-processus.png"
+                                alt="Le Garford modélisé avec Blender"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Le Garford modélisé avec Blender"
+                            />
+
+                            <p class="legende legende--left">
+                                Le Garford modélisé avec Blender
+                            </p>
+                        </div>
+                        <div class="processus__description">
+                            <p>
+                                Le personnage a été modélisé avec MakeHuman et
+                                retouché avec Photoshop et les animations ont
+                                été importées avec Mixamo. La librairie, le
+                                Garford et les objets à collecter ont été
+                                modélisé avec Blender lors du cours d’Animation
+                                3D et leurs textures ont été adaptées pour
+                                l’intégration dans Unity.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="projet__processus__suite wrapper section">
+                    <div class="processus__container__suite">
+                        <h2 class="processus__title title--section">
+                            <span>Les</span><br />integrations
+                        </h2>
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/village-integration.png"
+                                alt="Intégration des élément dans la scène"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Intégration des élément dans la scène"
+                            />
+
+                            <p class="legende legende--left">
+                                Intégration des élément dans la scène
+                            </p>
+                        </div>
+                        <div class="processus__description__suite">
+                            <p>
+                                J’ai organisé les scènes du jeu en intégrant les
+                                modèles 3D dans Unity. J’ai ajouté les
+                                composantes nécessaires à l’interaction comme
+                                pour la physique et la collision entre les
+                                éléments.
+                            </p>
+                            <p>
+                                J’ai aussi intégré des sons 3D dont le volume
+                                varie selon la proximité du personnage
+                                vis-là-vis l’objet associé au son.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projet__defis wrapper section">
+                    <div class="defis__container">
+                        <h2 class="defis__title title--section">
+                            <span>Le</span><br />personnage
+                        </h2>
+                        <div class="photo__container photo__container--left">
+                            <img
+                                src="assets/images/village-personnage.png"
+                                alt="Niveau 2 utilisant la caméra Cinemachine"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Niveau 2 utilisant la caméra Cinemachine"
+                            />
+
+                            <p class="legende legende--left">
+                                Niveau 2 utilisant la caméra Cinemachine
+                            </p>
+                        </div>
+                        <div class="defis__description">
+                            <p>
+                                J’ai programmé le personnage pour qu’il puisse
+                                se déplacer avec les flèches du clavier et
+                                sauter avec la barre espace. Il peut aussi
+                                courir en maintenant la touche Shift et
+                                interagir avec les objets à l’aide de la touche
+                                E. Ses actions ont différentes animations
+                                importées de Mixamo et sont gérées par une
+                                composante Animator.
+                            </p>
+                            <p>
+                                Dans le deuxième niveau, le joueur peut décidé
+                                d’utiliser la caméra à la première personne ou
+                                celle à la troisième personnage programmée avec
+                                la Cinemachine.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projet__processus__suite wrapper section">
+                    <div class="processus__container__suite">
+                        <h2 class="processus__title title--section">
+                            <span>Les</span><br />objectifs
+                        </h2>
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/village-objectifs.png"
+                                alt="Panneau indiquant les objectifs"
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Panneau indiquant les objectifs"
+                            />
+
+                            <p class="legende legende--left">
+                                Panneau indiquant les objectifs
+                            </p>
+                        </div>
+                        <div class="processus__description__suite">
+                            <p>
+                                Chaque niveau comporte plusieurs objectifs
+                                programmés en C# à remplir dans un ordre précis
+                                pour passer au suivant. Dans le premier niveau,
+                                le joueur doit collecter plusieurs objets se
+                                déplaçant de façon aléatoire, accéder au Garford
+                                en activant une manivelle et le conduire.
+                            </p>
+                            <p>
+                                Dans le deuxième niveau, le joueur doit
+                                récupérer trois objets et retourner au Garford.
+                                Les objectifs sont indiqués sur un panneau de
+                                façon dynamique.
+                            </p>
+                        </div>
+
+                        <div class="btn-back">
+                            <a href="index.html#projets">
+                                <div class="losange">
+                                    <img
+                                        src="assets/images/back-btn.svg"
+                                        alt="Retour aux projets"
+                                    />
+                                </div>
+                                <p>Retour aux projets</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <template id="tpl-modal-photos">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <div class="modal__content">
+                        <img
+                            src="../assets/images/hero-piano.png"
+                            alt="Projet"
+                            class="modal__img"
+                        />
+                        <h2>{{title}}</h2>
+                    </div>
+                    <button class="modal__close js-close"></button>
+                </div>
+            </div>
+        </template>
+
+        <div class="inner-cursor"></div>
+        <div class="outer-cursor"></div>
+    </body>
+</html>
