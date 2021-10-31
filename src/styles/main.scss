@@ -31,6 +31,7 @@
 // C’est là que la majorité de notre travail a lieu.
 @import '../../node_modules/swiper/swiper.scss';
 
+@import 'components/sections.scss';
 @import 'components/cursor.scss';
 @import 'components/section-scroll.scss';
 @import 'components/icons.scss';
@@ -46,6 +47,7 @@
 @import 'components/projet-foret.scss';
 @import 'components/projet-village.scss';
 @import 'components/projet-musicon.scss';
+@import 'components/projet-timflix.scss';
 @import 'components/page-404.scss';
 
 // UTILITIES

@@ -1,0 +1,17 @@
+/* ==========================================================================
+ Sections / Components
+ ========================================================================== */
+
+body .section {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 0;
+
+    @media screen and(min-width:$breakpoint-md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 120px;
+    }
+}

@@ -13,12 +13,6 @@
 }
 
 .contact {
-    padding-top: 60px;
-    @media screen and (min-width: $breakpoint-md) {
-        height: 100vh;
-        padding-top: 120px;
-    }
-
     .icone__container {
         border: 2px solid rgba(0, 179, 255, 0.5);
         width: 50px;

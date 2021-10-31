@@ -26,18 +26,17 @@
     width: 100%;
 }
 
-.btn-back a {
+.btn-back a,
+.btn-forward a {
     display: flex;
     align-items: center;
     color: var(--color-tertiary);
     letter-spacing: 0.1em;
     width: fit-content;
+    font-size: var(--font-size-content);
 
     &:hover {
         color: var(--color-secondary);
-        img {
-            transform: translateX(-30px);
-        }
     }
 
     .losange {
@@ -58,5 +57,26 @@
 
     p {
         margin-left: 60px;
+    }
+}
+
+.btn-back a {
+    &:hover {
+        img {
+            transform: translateX(-30px);
+        }
+    }
+}
+
+.btn-forward a {
+    .losange img {
+        transform: scaleX(-100%);
+        top: 30%;
+        left: 30%;
+    }
+    &:hover {
+        img {
+            transform: scaleX(-100%) translateX(-20px);
+        }
     }
 }
