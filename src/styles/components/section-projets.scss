@@ -3,6 +3,9 @@
  ========================================================================== */
 
 .projets {
+    h2 {
+        overflow-y: hidden;
+    }
     .swiper-slide {
         transform: skewY(3deg);
         width: 270px;

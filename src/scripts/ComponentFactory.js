@@ -3,6 +3,7 @@ import Carousel from './components/Carousel';
 import Form from './components/Form';
 import Modal from './components/Modal';
 import Cursor from './components/Cursor';
+import Scrolly from './components/Scrolly';
 
 export default class ComponentFactory {
   constructor() {
@@ -13,6 +14,7 @@ export default class ComponentFactory {
       Form,
       Modal,
       Cursor,
+      Scrolly,
     };
     this.init();
   }
