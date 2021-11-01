@@ -12,7 +12,7 @@
     </head>
 
     <body data-component="Cursor">
-        <div class="site-container">
+        <div class="site-container" data-component="Scrolly">
             <header class="header" data-component="Header">
                 <div class="wrapper">
                     <div class="header__brand">
@@ -57,13 +57,20 @@
             <section class="hero section" id="hero">
                 <div class="hero__content wrapper">
                     <h1 class="hero__title">
-                        <span>Caroline</span><br />Loubier
+                        <div data-scrolly="revealFromTop">
+                            <span>Caroline</span>
+                        </div>
+                        <div data-scrolly="revealFromTop2">Loubier</div>
                     </h1>
-                    <h2>Programmation | Développement web</h2>
+                    <h2 data-scrolly="opacityDelay2">
+                        Programmation | Développement web
+                    </h2>
                     <div class="hero__scroll-down">
                         <a href="#projets">
-                            <p>Découvrir mes projets</p>
-                            <button>
+                            <p data-scrolly="opacityDelay2">
+                                Découvrir mes projets
+                            </p>
+                            <button data-scrolly="opacityDelay2">
                                 <img
                                     src="assets/icons/scroll-down.svg"
                                     alt="Découvrir mes projets"
@@ -77,10 +84,19 @@
 
             <section class="projets section" id="projets">
                 <div class="projets__content wrapper">
-                    <h2 class="projets__title title--section">
-                        <span>Mes</span><br />projets
+                    <h2
+                        class="projets__title title--section"
+                        data-scrolly="opacity"
+                    >
+                        <div data-scrolly="revealFromTop">
+                            <span>Mes</span><br />projets
+                        </div>
                     </h2>
-                    <div class="swiper" data-component="Carousel">
+                    <div
+                        class="swiper"
+                        data-component="Carousel"
+                        data-scrolly="opacityDelay"
+                    >
                         <div class="swiper-wrapper grow">
                             <div class="swiper-slide">
                                 <a href="le-village.html">
@@ -162,7 +178,9 @@
                 <div class="a-propos__content wrapper">
                     <div class="a-propos__section section">
                         <h2 class="a-propos__title title--section">
-                            <span>A</span><br />propos
+                            <div data-scrolly="revealFromTop">
+                                <span>A</span><br />propos
+                            </div>
                         </h2>
                         <div class="a-propos__description">
                             <div class="a-propos__photo">
@@ -170,9 +188,13 @@
                                     src="assets/images/about-photo.png"
                                     alt="Caroline Loubier"
                                     class="photo"
+                                    data-scrolly="scaleDelay"
                                 />
                             </div>
-                            <div class="a-propos__texte">
+                            <div
+                                class="a-propos__texte"
+                                data-scrolly="opacityDelay"
+                            >
                                 <p>
                                     <span class="text--bold">Hey!</span> Moi
                                     c’est
@@ -219,46 +241,63 @@
                             <span>Mes</span><br />qualites
                         </h2>
                         <div class="qualite">
-                            <h3>
-                                <span class="numero">01</span>
-                                Assidue
-                            </h3>
+                            <div
+                                data-scrolly="opacityDelay"
+                                class="qualite__content"
+                            >
+                                <h3>
+                                    <span class="numero">01</span>
+                                    Assidue
+                                </h3>
 
-                            <p>
-                                Parce que les échéanciers sont là pour une
-                                raison!
-                            </p>
+                                <p>
+                                    Parce que les échéanciers sont là pour une
+                                    raison!
+                                </p>
+                            </div>
                         </div>
                         <div class="qualite">
-                            <h3>
-                                <span class="numero">02</span>
-                                Curieuse
-                            </h3>
+                            <div
+                                data-scrolly="opacityDelay2"
+                                class="qualite__content"
+                            >
+                                <h3>
+                                    <span class="numero">02</span>
+                                    Curieuse
+                                </h3>
 
-                            <p>
-                                Parce que je cherche toujours à en apprendre
-                                plus!
-                            </p>
+                                <p>
+                                    Parce que je cherche toujours à en apprendre
+                                    plus!
+                                </p>
+                            </div>
                         </div>
 
                         <div class="qualite">
-                            <h3>
-                                <span class="numero">03</span>
-                                Organisee
-                            </h3>
+                            <div
+                                data-scrolly="opacityDelay3"
+                                class="qualite__content"
+                            >
+                                <h3>
+                                    <span class="numero">03</span>
+                                    Organisee
+                                </h3>
 
-                            <p>Parce que j’aime que tout soit en ordre!</p>
+                                <p>Parce que j’aime que tout soit en ordre!</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="a-propos__competences section">
                         <h2 class="a-propos__title title--section">
-                            <span>Mes</span><br />competences
+                            <div data-scrolly="revealFromTop">
+                                <span>Mes</span><br />competences
+                            </div>
                         </h2>
 
                         <div class="competences__wrapper">
                             <div class="competences__content">
-                                <div class="competence">
+                                <div class="competence" data-scrolly="scale">
                                     <a
                                         href="https://www.w3schools.com/css/css_intro.asp"
                                         target="_blank"
@@ -273,7 +312,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="competence">
+                                <div class="competence" data-scrolly="scale2">
                                     <a
                                         href="https://www.w3schools.com/html/html_intro.asp"
                                         target="_blank"
@@ -288,7 +327,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="competence">
+                                <div class="competence" data-scrolly="scale3">
                                     <a
                                         href="https://www.w3schools.com/js/js_intro.asp"
                                         target="_blank"
@@ -303,7 +342,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="competence">
+                                <div class="competence" data-scrolly="scale4">
                                     <a
                                         href="https://www.blender.org/"
                                         target="_blank"
@@ -318,7 +357,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="competence">
+                                <div class="competence" data-scrolly="scale5">
                                     <a
                                         href="https://unity.com/"
                                         target="_blank"
@@ -333,7 +372,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="competence">
+                                <div class="competence" data-scrolly="scale6">
                                     <a
                                         href="https://www.w3schools.com/php/php_intro.asp"
                                         target="_blank"
@@ -357,9 +396,11 @@
             <section class="contact section" id="contact">
                 <div class="contact__container wrapper">
                     <h2 class="contact__title title--section">
-                        <span>Me</span><br />contacter
+                        <div data-scrolly="revealFromTop">
+                            <span>Me</span><br />contacter
+                        </div>
                     </h2>
-                    <div class="contact__content">
+                    <div class="contact__content" data-scrolly="opacityDelay">
                         <div class="contact__info">
                             <a
                                 href="mailto:info@carolineloubier.ca"
