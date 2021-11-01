@@ -3,7 +3,7 @@
  ========================================================================== */
 
 .hero {
-    height: 100vh;
+    height: 100vh !important;
     text-align: center;
     text-transform: uppercase;
 
@@ -12,7 +12,6 @@
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
-        padding-top: 100px;
         padding-bottom: 50px;
     }
 
@@ -74,12 +73,6 @@
             span {
                 font-size: var(--font-size-large-tab);
             }
-        }
-    }
-
-    @media screen and (min-width: $breakpoint-md) {
-        .hero__content {
-            padding-top: 180px;
         }
     }
 

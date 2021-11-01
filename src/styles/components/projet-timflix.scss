@@ -245,7 +245,8 @@
         }
 
         .contexte__description,
-        .processus__description {
+        .processus__description,
+        .processus__description__suite {
             margin: 15px 0;
 
             @media screen and (min-width: $breakpoint-md) {
@@ -311,6 +312,7 @@
                     height: 100%;
                     flex-direction: column;
                     justify-content: center;
+                    font-size: var(--font-size-content-desk);
                 }
 
                 .photo__container--right {

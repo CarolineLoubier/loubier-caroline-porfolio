@@ -155,6 +155,7 @@
 
         h2 {
             margin: 0 0 15px 0;
+            white-space: nowrap;
         }
 
         h3 {
@@ -318,6 +319,7 @@
                     height: 100%;
                     flex-direction: column;
                     justify-content: center;
+                    font-size: var(--font-size-content-desk);
                 }
 
                 .photo__container--right {
