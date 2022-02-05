@@ -17,6 +17,12 @@ html {
     cursor: none;
 }
 
+*::selection {
+    color: var(--color-white);
+    background: var(--color-primary-darker);
+    -webkit-text-stroke: 1px var(--color-white);
+}
+
 img {
     max-width: 100%;
 }
