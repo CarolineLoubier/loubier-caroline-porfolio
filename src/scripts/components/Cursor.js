@@ -15,8 +15,6 @@ export default class Cursor {
    * Méthode d'initialisation
    */
   init() {
-    console.log('Nouvelle instance de la composante -> Cursor');
-
     let links = document.querySelectorAll(
       'a, button, input, textarea, .photo__projet'
     );
