@@ -53,9 +53,9 @@
                 </div>
             </header>
 
-            <div class="projet--timflix">
-                <section class="hero--timflix section">
-                    <div class="hero-timflix__container wrapper">
+            <div class="projet--mystic">
+                <section class="hero--mystic section">
+                    <div class="hero-mystic__container wrapper">
                         <h1 class="title--section">Mystic</h1>
                         <div class="info__projet">
                             <div class="info__left">
@@ -63,7 +63,7 @@
                                 <h3>Projet scolaire</h3>
                             </div>
                             <a
-                                href="https://cloubier.dectim.ca/projets/cw3/tp-final/"
+                                href="https://mystic.dectim.ca/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 ><button class="btn btn--large">
@@ -79,25 +79,34 @@
                             <span>Le</span><br />contexte
                         </h2>
                         <div class="photo__container photo__container--right">
-                            <img
-                                src="assets/images/timflix-contexte.png"
-                                alt="Le site s’adapte à plusieurs résolutions d’écran"
-                                class="photo__projet photo--left"
-                                data-component="Modal"
-                                data-modal-id="tpl-modal-photos"
-                                data-modal-title="Le site s’adapte à plusieurs résolutions d’écran"
-                            />
+                            <iframe
+                                class="photo__projet photo-left"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/pre_vRnmtAk"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
 
                             <p class="legende legende--left">
-                                Le site s’adapte à plusieurs résolutions d’écran
+                                Vidéo annonçant la sortie du jeu.
                             </p>
                         </div>
                         <p class="contexte__description">
-                            Ce projet a été réalisé dans le cadre du cours
-                            Conception Web III et programmé en HTML, CSS et
-                            JavaScript. Le but était de programmer un site web
-                            sur le cinéma pouvait récupérer des données de l’API
-                            du site The Movie DB de façon dynamique.
+                            Mystic: Le temple du renouveau est un
+                            <span class="text--bold">jeu 3D</span> dans lequel
+                            le joueur doit résoudre un certain nombre d’énigmes
+                            afin de s’échapper du temple duquel il est
+                            prisonnier. Le jeu a été réalisé en équipe pour
+                            l’événement
+                            <span class="text--bold">Chaos Médias</span>. Mystic
+                            a été programmé en utilisant le
+                            <span class="text--bold">langage C#</span> et la
+                            <span class="text--bold"
+                                >plateforme de développement Unity</span
+                            >.
                         </p>
                         <div class="contexte__details">
                             <div class="contexte__logiciels">
@@ -116,10 +125,23 @@
                                             />
                                         </a>
                                     </div>
+                                    <div class="logiciel__container">
+                                        <a
+                                            href="https://unity.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="assets/images/unity.svg"
+                                                alt="Unity"
+                                                class="logiciel"
+                                            />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="contexte__credits">
-                                <h3>Images</h3>
+                                <h3>Voir les crédits</h3>
                                 <div class="credits__container">
                                     <a
                                         href="https://www.themoviedb.org/?language=fr"
@@ -135,30 +157,37 @@
                 <section class="projet__processus wrapper section">
                     <div class="processus__container">
                         <h2 class="processus__title title--section">
-                            <span>Recuperer</span><br />le contenu
+                            <span>L’evenement</span><br />Chaos Media
                         </h2>
                         <div class="photo__container photo__container--left">
                             <img
-                                src="assets/images/timflix-recuperation-contenu.png"
-                                alt=""
+                                src="assets/images/chaos-media.jpg"
+                                alt="Affiche promotionnelle de l’évènement Chaos
+                                Médias 2021."
                                 class="photo__projet photo--right"
                                 data-component="Modal"
                                 data-modal-id="tpl-modal-photos"
-                                data-modal-title="La classe MovieDB et ses paramètres sont
-                                utilisés pour récupérer les derniers films"
+                                data-modal-title="Affiche promotionnelle de l’évènement Chaos Médias 2021."
                             />
-
                             <p class="legende legende--left">
-                                La classe MovieDB et ses paramètres sont
-                                utilisés pour récupérer les derniers films
+                                Affiche promotionnelle de l’évènement Chaos
+                                Médias 2021.
                             </p>
                         </div>
                         <div class="processus__description">
                             <p>
-                                Après avoir créé un compte TMDB, j'ai généré une
-                                clef API et défini plusieurs paramètres qui sont
-                                utilisés dans deux classes pour envoyer une
-                                requête des films voulus.
+                                Chaos Média est un
+                                <span class="text--bold">
+                                    évènement annuel </span
+                                >où les étudiants de troisième année de la
+                                Technique d’intégration multimédia réalisent un
+                                projet interactif en équipe en
+                                <span class="text--bold"> 8 semaines</span> dans
+                                le but de le présenter au public. Pour la
+                                première fois lors de l’édition 2021,
+                                l’événement était composé d’une équipe par
+                                classe où chaque étudiant était réparti dans un
+                                département selon ses forces.
                             </p>
                         </div>
                     </div>
@@ -166,41 +195,242 @@
                 <section class="projet__processus__suite wrapper section">
                     <div class="processus__container__suite">
                         <h2 class="processus__title__suite title--section">
-                            <span>Afficher</span><br />le contenu
+                            <span>Processus</span><br />d'ideation
                         </h2>
                         <div class="photo__container photo__container--right">
                             <img
-                                src="assets/images/timflix-afficher-contenu.png"
-                                alt="Méthode permettant d'afficher les derniers films"
+                                src="assets/images/mystic-processus.png"
+                                alt="Tableau YouTrack utilisé pour la gestion de
+                                projet."
                                 class="photo__projet photo--left"
                                 data-component="Modal"
                                 data-modal-id="tpl-modal-photos"
-                                data-modal-title="Méthode permettant d'afficher les derniers films"
+                                data-modal-title="Tableau YouTrack utilisé pour la gestion de
+                                projet."
                             />
 
                             <p class="legende legende--left">
-                                Méthode permettant d'afficher les derniers films
+                                Tableau YouTrack utilisé pour la gestion de
+                                projet.
                             </p>
                         </div>
                         <div class="processus__description__suite">
                             <p>
-                                J'ai créé plusieurs méthodes bouclant sur les
-                                films voulus pour les afficher. Les méthodes
-                                utilisent un template créé en HTML et remplacent
-                                le contenu à l'intérieur de celui-ci par les
-                                données récupérées de TMDB.
+                                Au début du projet, nous avons fait une session
+                                de
+                                <span class="text--bold"> brainstorm</span> en
+                                équipe afin de trouver un concept pour notre
+                                jeu. Nous avons dû prendre en compte différentes
+                                contraintes comme le temps de production limité,
+                                le matériel fourni et la taille de notre équipe.
+                                Une fois le concept choisi, nous avons réparti
+                                la classe en plusieurs départements pour
+                                <span class="text--bold"
+                                    >diviser les tâches</span
+                                >. Je faisais partie de l’équipe
+                                <span class="text--bold"
+                                    >chargée de l’intégration et la
+                                    programmation du jeu et j’étais chef du
+                                    département</span
+                                >.
+                            </p>
+                            <p>
+                                Nous avons décidé d’utiliser l’outil de gestion
+                                de projet
+                                <span class="text--bold">YouTrack</span> pour
+                                suivre l’évolution de chaque département et
+                                <span class="text--bold">GitHub</span> pour
+                                gérer les versions du jeu.
                             </p>
                         </div>
-                        <div class="btn-back">
-                            <a href="index.html#projets">
-                                <div class="losange">
-                                    <img
-                                        src="assets/images/back-btn.svg"
-                                        alt="Retour aux projets"
-                                    />
+                    </div>
+                </section>
+
+                <section class="projet__processus wrapper section">
+                    <div class="processus__container">
+                        <h2 class="processus__title title--section">
+                            <span>Les</span><br />integrations
+                        </h2>
+                        <div class="photo__container photo__container--left">
+                            <img
+                                src="assets/images/mystic-integration.png"
+                                alt="Intégration du niveau 1 dans Unity."
+                                class="photo__projet photo--right"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Intégration du niveau 1 dans Unity."
+                            />
+                            <p class="legende legende--left">
+                                Intégration du niveau 1 dans Unity.
+                            </p>
+                        </div>
+                        <div class="processus__description">
+                            <p>
+                                Chaos Média est un
+                                <span class="text--bold">
+                                    évènement annuel </span
+                                >où les étudiants de troisième année de la
+                                Technique d’intégration multimédia réalisent un
+                                projet interactif en équipe en
+                                <span class="text--bold"> 8 semaines</span> dans
+                                le but de le présenter au public. Pour la
+                                première fois lors de l’édition 2021,
+                                l’événement était composé d’une équipe par
+                                classe où chaque étudiant était réparti dans un
+                                département selon ses forces.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projet__processus__suite wrapper section">
+                    <div class="processus__container__suite">
+                        <h2 class="processus__title__suite title--section">
+                            <span>Programmer</span><br />l'interaction
+                        </h2>
+                        <div class="photo__container photo__container--right">
+                            <img
+                                src="assets/images/mystic-programmation.png"
+                                alt="Gestionnaire de jeu permettant de changer de niveau, de quitter le jeu et d’ouvrir et fermer le menu."
+                                class="photo__projet photo--left"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Gestionnaire de jeu permettant de changer de niveau, de quitter le jeu et d’ouvrir et fermer le menu."
+                            />
+
+                            <p class="legende legende--left">
+                                Gestionnaire de jeu permettant de changer de
+                                niveau, de quitter le jeu et d’ouvrir et fermer
+                                le menu.
+                            </p>
+                        </div>
+                        <div class="processus__description__suite">
+                            <p>
+                                J’ai participé à plusieurs aspects de la
+                                programmation du jeu en plus de l’intégration.
+                                J’ai notamment programmé l’
+                                <span class="text--bold"
+                                    >interaction avec les trois énigmes</span
+                                >
+                                à résoudre, la
+                                <span class="text--bold">cinématique</span> de
+                                début, une partie du
+                                <span class="text--bold">menu</span> et un
+                                <span class="text--bold"
+                                    >gestionnaire de jeu</span
+                                >
+                                pour les
+                                <span class="text--bold"
+                                    >changements de scènes</span
+                                >
+                                et le
+                                <span class="text--bold">compte à rebours</span
+                                >.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projet__programmation wrapper section">
+                    <div class="programmation__container">
+                        <div class="photo__container photo__container--left">
+                            <img
+                                src="assets/images/mystic-integration.png"
+                                alt=""
+                                class="photo__projet photo--right"
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-photos"
+                                data-modal-title="Intégration du niveau 1 dans Unity."
+                            />
+                            <p class="legende legende--left">
+                                Intégration du niveau 1 dans Unity.
+                            </p>
+                        </div>
+                        <div class="programmation__description">
+                            <p>
+                                Chaos Média est un
+                                <span class="text--bold">
+                                    évènement annuel </span
+                                >où les étudiants de troisième année de la
+                                Technique d’intégration multimédia réalisent un
+                                projet interactif en équipe en
+                                <span class="text--bold"> 8 semaines</span> dans
+                                le but de le présenter au public. Pour la
+                                première fois lors de l’édition 2021,
+                                l’événement était composé d’une équipe par
+                                classe où chaque étudiant était réparti dans un
+                                département selon ses forces.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projet__section__credits wrapper section">
+                    <div class="processus__container__suite">
+                        <h2 class="processus__title__suite title--section">
+                            <span>Les</span><br />credits
+                        </h2>
+                        <div class="projet__credits">
+                            <div class="credits__column1 credits">
+                                <div>
+                                    <h3>MODÉLISATEURS / ANIMATEURS 3D</h3>
+                                    <p>Anthony Janes-Villiard</p>
+                                    <p>Phillipe Lapierre</p>
                                 </div>
-                                <p>Retour aux projets</p>
-                            </a>
+
+                                <div>
+                                    <h3>DESIGNERS / GRAPHISTES</h3>
+                                    <p>Hanakyn Bélanger</p>
+                                    <p>Maxime Côté</p>
+                                    <p>Olivier Dugal</p>
+                                    <p>Roméo Girard</p>
+                                </div>
+                                <div>
+                                    <h3>GESTIONNAIRE & COORDINATEUR</h3>
+                                    <p>William Despatie-Bonneville</p>
+                                </div>
+                            </div>
+
+                            <div class="credits__column2 credits">
+                                <div>
+                                    <h3>PROGRAMMEURS / INTÉGRATEURS UNITY</h3>
+                                    <p>Caroline Loubier</p>
+                                    <p>Louis Séguin</p>
+                                </div>
+
+                                <div>
+                                    <h3>VIDÉASTES</h3>
+                                    <p>Tristan Coulombe</p>
+                                    <p>Danny Guettab</p>
+                                    <p>Mohammed El Moctar</p>
+                                </div>
+                            </div>
+
+                            <div class="credits__column3 credits">
+                                <div>
+                                    <h3>INTÉGRATEURS / DÉVELOPPEURS WEB</h3>
+                                    <p>Ricardo Yanez</p>
+                                    <p>Paul Mariuta</p>
+                                </div>
+
+                                <div>
+                                    <h3>SCÉNARISTES</h3>
+                                    <p>Arthur Bourgouin</p>
+                                    <p>Sarah Brouillet</p>
+                                </div>
+
+                                <div class="btn-back">
+                                    <a href="index.html#projets">
+                                        <div class="losange">
+                                            <img
+                                                src="assets/images/back-btn.svg"
+                                                alt="Retour aux projets"
+                                            />
+                                        </div>
+                                        <p>Retour aux projets</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
