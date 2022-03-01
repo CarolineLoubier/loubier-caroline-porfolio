@@ -147,6 +147,10 @@
 
                 margin-bottom: 30px;
 
+                a {
+                    color: var(--color-secondary);
+                }
+
                 @media screen and (min-width: $breakpoint-md) {
                     display: block;
                     margin: 0;
@@ -407,5 +411,9 @@
         div div:nth-child(1) {
             margin-top: 0;
         }
+    }
+
+    .programmation__description {
+        grid-row: 1/-1;
     }
 }

@@ -80,18 +80,19 @@
                         </h2>
                         <div class="photo__container photo__container--right">
                             <iframe
-                                class="photo__projet photo-left"
                                 width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/pre_vRnmtAk"
+                                class="photo__projet photo-left"
+                                src="https://www.youtube.com/embed/J1PO8gz97d0"
                                 title="YouTube video player"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
-                            ></iframe>
+                            >
+                            </iframe>
 
                             <p class="legende legende--left">
-                                Vidéo annonçant la sortie du jeu.
+                                Aperçu des différents niveaux du jeu.
                             </p>
                         </div>
                         <p class="contexte__description">
@@ -141,15 +142,9 @@
                                 </div>
                             </div>
                             <div class="contexte__credits">
-                                <h3>Voir les crédits</h3>
-                                <div class="credits__container">
-                                    <a
-                                        href="https://www.themoviedb.org/?language=fr"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        >TMDB
-                                    </a>
-                                </div>
+                                <h3>
+                                    <a href="#credits"> Voir les crédits</a>
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -308,11 +303,7 @@
                             <p>
                                 J’ai participé à plusieurs aspects de la
                                 programmation du jeu en plus de l’intégration.
-                                J’ai notamment programmé l’
-                                <span class="text--bold"
-                                    >interaction avec les trois énigmes</span
-                                >
-                                à résoudre, la
+                                J’ai notamment programmé la
                                 <span class="text--bold">cinématique</span> de
                                 début, une partie du
                                 <span class="text--bold">menu</span> et un
@@ -335,37 +326,45 @@
                     <div class="programmation__container">
                         <div class="photo__container photo__container--left">
                             <img
-                                src="assets/images/mystic-integration.png"
-                                alt=""
+                                src="assets/images/mystic-programmation-suite.png"
+                                alt="Programmation de l’énigme 3 utilisant les
+                                Colliders et la physique."
                                 class="photo__projet photo--right"
                                 data-component="Modal"
                                 data-modal-id="tpl-modal-photos"
-                                data-modal-title="Intégration du niveau 1 dans Unity."
+                                data-modal-title="Programmation de l’énigme 3 utilisant les
+                                Colliders et la physique."
                             />
                             <p class="legende legende--left">
-                                Intégration du niveau 1 dans Unity.
+                                Programmation de l’énigme 3 utilisant les
+                                Colliders et la physique.
                             </p>
                         </div>
                         <div class="programmation__description">
                             <p>
-                                Chaos Média est un
+                                J’ai aussi participé à la
                                 <span class="text--bold">
-                                    évènement annuel </span
-                                >où les étudiants de troisième année de la
-                                Technique d’intégration multimédia réalisent un
-                                projet interactif en équipe en
-                                <span class="text--bold"> 8 semaines</span> dans
-                                le but de le présenter au public. Pour la
-                                première fois lors de l’édition 2021,
-                                l’événement était composé d’une équipe par
-                                classe où chaque étudiant était réparti dans un
-                                département selon ses forces.
+                                    programmation des énigmes</span
+                                >
+                                à travers les trois niveaux du jeu. Certaines
+                                comme celle du niveau trois utilisent les
+                                composantes
+                                <span class="text--bold">Collider</span> et
+                                <span class="text--bold">RigidBody</span> pour
+                                <span class="text--bold"
+                                    >ajouter de la physique</span
+                                >
+                                aux statues et permettre au joueur de les
+                                déplacer.
                             </p>
                         </div>
                     </div>
                 </section>
 
-                <section class="projet__section__credits wrapper section">
+                <section
+                    class="projet__section__credits wrapper section"
+                    id="credits"
+                >
                     <div class="processus__container__suite">
                         <h2 class="processus__title__suite title--section">
                             <span>Les</span><br />credits
