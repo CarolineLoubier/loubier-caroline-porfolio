@@ -6,7 +6,7 @@
         <title>Caroline Loubier</title>
 
         <link rel="stylesheet" href="styles/main.css" />
-
+        <link rel="shortcut icon" href="assets/icons/favicon.ico" />
         <script src="scripts/main.js" defer></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     </head>
